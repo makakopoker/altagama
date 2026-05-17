@@ -1,136 +1,244 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Alta Gama Automotive</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Alta Gama Automotive</title>
+<meta name="description"
+content="Vehículos premium seleccionados con historial contrastado y máxima transparencia."/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header class="header">
-  <div class="logo">Alta Gama Automotive</div>
+<header class="header" id="header">
 
-  <nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#vehiculos">Vehículos</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
-</header>
+    <div class="logo">
+        <img src="logo.png" alt="Alta Gama Automotive">
+    </div>
 
-<section class="hero" id="inicio">
-  <div class="overlay"></div>
+    <nav class="nav">
+        <a href="#vehicle">Vehículo</a>
+        <a href="#gallery">Galería</a>
+        <a href="#specs">Especificaciones</a>
+        <a href="#contact">Contacto</a>
+    </nav>
 
-  <div class="hero-content">
-    <span class="premium-badge">
-      Vehículos Premium Seleccionados
-    </span>
-
-    <h1>Alta Gama Automotive</h1>
-
-    <p>
-      Vehículos premium seleccionados con historial contrastado,
-      equipamiento superior y máxima transparencia.
-    </p>
-
-    <div class="hero-buttons">
-      <a href="#vehiculos" class="btn-primary">
-        Ver Vehículos
-      </a>
-
-      <a href="#contacto" class="btn-secondary">
+    <button class="header-btn" onclick="scrollToContact()">
         Contactar
-      </a>
-    </div>
-  </div>
-</section>
-
-<section class="featured-car" id="vehiculos">
-
-  <div class="car-image">
-    <img
-      src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8"
-      alt="Infiniti QX70S"
-    />
-  </div>
-
-  <div class="car-info">
-
-    <span class="available">
-      Disponible
-    </span>
-
-    <h2>Infiniti QX70S 5.0 V8 Premium</h2>
-
-    <div class="price">
-      20.500€
-    </div>
-
-    <div class="specs">
-      <span>📅 2015</span>
-      <span>🚗 146.000 km</span>
-      <span>⛽ Gasolina</span>
-      <span>⚙️ Automático</span>
-      <span>🔥 V8</span>
-    </div>
-
-    <ul class="features">
-      <li>Libro de mantenimiento</li>
-      <li>Full extras</li>
-      <li>Vehículo revisado</li>
-      <li>Estado impecable</li>
-    </ul>
-
-    <button class="whatsapp-btn" onclick="openWhatsApp()">
-      Solicitar Información
     </button>
 
-  </div>
+</header>
+
+<section class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <img class="hero-image"
+    src="images/hero.jpg"
+    alt="Infiniti QX70S">
+
+    <div class="hero-content">
+
+        <span class="badge">
+            Vehículo premium seleccionado
+        </span>
+
+        <h1>
+            Infiniti QX70S<br>
+            5.0 V8 Premium
+        </h1>
+
+        <div class="hero-specs">
+
+            <span>2015</span>
+            <span>146.000 km</span>
+            <span>Gasolina</span>
+            <span>Automático</span>
+            <span>390 CV</span>
+
+        </div>
+
+        <div class="price">
+            20.500€
+        </div>
+
+        <div class="hero-buttons">
+
+            <button class="primary-btn"
+            onclick="openWhatsApp()">
+                Solicitar información
+            </button>
+
+            <button class="secondary-btn"
+            onclick="scrollToGallery()">
+                Ver galería
+            </button>
+
+        </div>
+
+    </div>
 
 </section>
 
-<section class="trust-section">
-  <h2>Confianza y Transparencia</h2>
+<section class="vehicle-section" id="vehicle">
 
-  <div class="trust-grid">
+    <div class="section-title">
 
-    <div class="trust-card">
-      <h3>Vehículos Seleccionados</h3>
-      <p>
-        Solo vehículos premium con historial contrastado.
-      </p>
+        <span>Vehículo destacado</span>
+        <h2>Infiniti QX70S 5.0 V8 Premium</h2>
+
     </div>
 
-    <div class="trust-card">
-      <h3>Máxima Transparencia</h3>
-      <p>
-        Información clara y real del estado del vehículo.
-      </p>
+    <div class="vehicle-grid">
+
+        <div class="vehicle-image">
+            <img src="images/front2.jpg" alt="">
+        </div>
+
+        <div class="vehicle-info">
+
+            <div class="status">
+                Disponible
+            </div>
+
+            <h3>
+                Exclusividad, potencia y equipamiento premium.
+            </h3>
+
+            <p>
+                Infiniti QX70S nacional equipado con motor
+                5.0 V8 atmosférico de 390 CV, cambio automático,
+                tracción AWD y configuración full extras.
+                Unidad muy cuidada, con libro de mantenimiento
+                y lista para disfrutar.
+            </p>
+
+            <ul class="features-list">
+
+                <li>Libro de mantenimiento</li>
+                <li>Motor V8 5.0 atmosférico</li>
+                <li>390 CV</li>
+                <li>Sonido Bose</li>
+                <li>Asientos eléctricos</li>
+                <li>Levas al volante</li>
+                <li>Cámara 360</li>
+                <li>Full extras</li>
+
+            </ul>
+
+        </div>
+
     </div>
 
-    <div class="trust-card">
-      <h3>Atención Personalizada</h3>
-      <p>
-        Contacto directo para resolver cualquier duda.
-      </p>
-    </div>
-
-  </div>
 </section>
 
-<footer id="contacto">
+<section class="gallery" id="gallery">
 
-  <h3>Alta Gama Automotive</h3>
+    <div class="section-title">
+        <span>Galería</span>
+        <h2>Imágenes del vehículo</h2>
+    </div>
 
-  <p>
-    Vehículos premium seleccionados
-  </p>
+    <div class="gallery-grid">
 
-  <button onclick="openWhatsApp()">
-    Contactar por WhatsApp
-  </button>
+        <img src="images/front.jpg" onclick="openLightbox(this)">
+        <img src="images/front2.jpg" onclick="openLightbox(this)">
+        <img src="images/rear.jpg" onclick="openLightbox(this)">
+        <img src="images/side.jpg" onclick="openLightbox(this)">
+        <img src="images/interior.jpg" onclick="openLightbox(this)">
+        <img src="images/seats.jpg" onclick="openLightbox(this)">
+        <img src="images/rear-seats.jpg" onclick="openLightbox(this)">
+        <img src="images/bose.jpg" onclick="openLightbox(this)">
+
+    </div>
+
+</section>
+
+<section class="specs-section" id="specs">
+
+    <div class="section-title">
+        <span>Especificaciones</span>
+        <h2>Datos del vehículo</h2>
+    </div>
+
+    <div class="specs-grid">
+
+        <div class="spec-card">
+            <span>Año</span>
+            <strong>2015</strong>
+        </div>
+
+        <div class="spec-card">
+            <span>Kilómetros</span>
+            <strong>146.000 km</strong>
+        </div>
+
+        <div class="spec-card">
+            <span>Motor</span>
+            <strong>5.0 V8</strong>
+        </div>
+
+        <div class="spec-card">
+            <span>Potencia</span>
+            <strong>390 CV</strong>
+        </div>
+
+        <div class="spec-card">
+            <span>Cambio</span>
+            <strong>Automático</strong>
+        </div>
+
+        <div class="spec-card">
+            <span>Tracción</span>
+            <strong>AWD</strong>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="contact-section" id="contact">
+
+    <h2>¿Te interesa este vehículo?</h2>
+
+    <p>
+        Contacta directamente para solicitar más
+        información, vídeo completo o concertar visita.
+    </p>
+
+    <button onclick="openWhatsApp()"
+    class="primary-btn">
+        Contactar por WhatsApp
+    </button>
+
+</section>
+
+<footer>
+
+    <img src="logo.png" class="footer-logo">
+
+    <p>
+        Alta Gama Automotive
+    </p>
+
+    <span>
+        Vehículos premium seleccionados
+    </span>
 
 </footer>
+
+<div class="lightbox" id="lightbox">
+    <span onclick="closeLightbox()">✕</span>
+    <img id="lightbox-img">
+</div>
 
 <script src="script.js"></script>
 
