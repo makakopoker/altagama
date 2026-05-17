@@ -1,7 +1,7 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,198 +10,196 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
 
 <header class="header">
 
-    <div class="logo">
-        <img src="logo.png" alt="Alta Gama Automotive">
-    </div>
+<div class="logo">
 
-    <nav class="nav">
-        <a href="#vehicles">Vehículos</a>
-        <a href="#about">Nosotros</a>
-        <a href="#contact">Contacto</a>
-    </nav>
+<img src="logo.png" alt="Alta Gama Automotive">
 
-    <button class="header-btn"
-    onclick="scrollToSection('contact')">
-        Contactar
-    </button>
+</div>
+
+<nav class="nav">
+
+<a href="#vehicles">Vehículos</a>
+<a href="#about">Nosotros</a>
+<a href="#contact">Contacto</a>
+
+</nav>
+
+<button class="header-btn"
+onclick="scrollToSection('contact')">
+
+Contactar
+
+</button>
 
 </header>
 
 
 <section class="hero">
 
-    <div class="hero-bg"></div>
+<img src="images/hero-premium.jpg"
+class="hero-bg">
 
-    <div class="hero-content">
+<div class="hero-overlay"></div>
 
-        <img src="logo.png"
-        class="hero-logo"
-        alt="Alta Gama Automotive">
+<div class="hero-content">
 
-        <span class="hero-badge">
-            Vehículos premium seleccionados
-        </span>
+<img src="logo.png"
+class="hero-logo">
 
-        <h1>
-            Vehículos exclusivos.<br>
-            Transparencia total.
-        </h1>
+<h1>
+ALTA GAMA
+</h1>
 
-        <p>
-            Seleccionamos vehículos premium
-            con historial contrastado,
-            configuraciones superiores y
-            máxima confianza.
-        </p>
+<h2>
+AUTOMOTIVE
+</h2>
 
-        <div class="hero-buttons">
+<p class="hero-title">
 
-            <button class="primary-btn"
-            onclick="scrollToSection('vehicles')">
-                Ver vehículos
-            </button>
+AUTOMOCIÓN PREMIUM,<br>
+SIN SORPRESAS.
 
-            <button class="secondary-btn"
-            onclick="scrollToSection('contact')">
-                Contactar
-            </button>
+</p>
 
-        </div>
+<p class="hero-description">
 
-    </div>
+Seleccionamos vehículos premium
+con historial contrastado,
+configuraciones superiores
+y transparencia total.
+
+</p>
+
+<div class="hero-buttons">
+
+<button class="primary-btn"
+onclick="scrollToSection('vehicles')">
+
+VER VEHÍCULOS
+
+</button>
+
+<button class="secondary-btn"
+onclick="scrollToSection('contact')">
+
+CONTACTAR
+
+</button>
+
+</div>
+
+</div>
 
 </section>
 
 
-<section class="vehicles-section"
+<section class="vehicle-section"
 id="vehicles">
 
-    <div class="section-header">
+<div class="vehicle-left">
 
-        <span>Vehículo disponible</span>
+<span class="vehicle-label">
 
-        <h2>
-            Selección premium
-        </h2>
+VEHÍCULO DISPONIBLE
 
-    </div>
+</span>
 
-    <div class="vehicle-card">
+<h2>
 
-        <div class="vehicle-image">
+INFINITI QX70S<br>
+5.0 V8 PREMIUM
 
-            <img src="images/front2.jpg"
-            alt="Infiniti QX70S">
+</h2>
 
-        </div>
+<div class="vehicle-specs">
 
-        <div class="vehicle-info">
+<div>
+<strong>2015</strong>
+<span>AÑO</span>
+</div>
 
-            <div class="status">
-                Disponible
-            </div>
+<div>
+<strong>146.000</strong>
+<span>KILÓMETROS</span>
+</div>
 
-            <h3>
-                Infiniti QX70S
-                5.0 V8 Premium
-            </h3>
+<div>
+<strong>GASOLINA</strong>
+<span>COMBUSTIBLE</span>
+</div>
 
-            <div class="vehicle-meta">
+<div>
+<strong>AUTO</strong>
+<span>CAMBIO</span>
+</div>
 
-                <span>2015</span>
-                <span>146.000 km</span>
-                <span>Gasolina</span>
-                <span>Automático</span>
-                <span>390 CV</span>
+<div>
+<strong>390 CV</strong>
+<span>POTENCIA</span>
+</div>
 
-            </div>
+</div>
 
-            <div class="price">
-                20.500€
-            </div>
+<button class="outline-btn">
 
-            <p>
-                Infiniti QX70S nacional equipado
-                con motor 5.0 V8 atmosférico,
-                tracción AWD y configuración
-                full extras. Vehículo muy
-                cuidado y con libro de
-                mantenimiento.
-            </p>
+VER DETALLES
 
-            <div class="equipment">
+</button>
 
-                <div>Navegación</div>
-                <div>Cámara 360</div>
-                <div>Sonido Bose</div>
-                <div>Asientos eléctricos</div>
-                <div>Cuero premium</div>
-                <div>Levas al volante</div>
+</div>
 
-            </div>
+<div class="vehicle-right">
 
-            <button class="primary-btn"
-            onclick="scrollToSection('gallery')">
-                Ver galería
-            </button>
+<img src="images/front2.jpg"
+alt="Infiniti QX70S">
 
-        </div>
-
-    </div>
+</div>
 
 </section>
 
 
-<section class="gallery-section"
+<section class="gallery"
 id="gallery">
 
-    <div class="section-header">
+<h3>Galería del vehículo</h3>
 
-        <span>Galería</span>
-        <h2>Imágenes del vehículo</h2>
+<div class="gallery-grid">
 
-    </div>
+<img src="images/front.jpg"
+onclick="openLightbox(this)">
 
-    <div class="gallery-grid">
+<img src="images/front2.jpg"
+onclick="openLightbox(this)">
 
-        <img src="images/front.jpg" onclick="openLightbox(this)">
-        <img src="images/front2.jpg" onclick="openLightbox(this)">
-        <img src="images/rear.jpg" onclick="openLightbox(this)">
-        <img src="images/side.jpg" onclick="openLightbox(this)">
-        <img src="images/interior.jpg" onclick="openLightbox(this)">
-        <img src="images/seats.jpg" onclick="openLightbox(this)">
-        <img src="images/rear-seats.jpg" onclick="openLightbox(this)">
-        <img src="images/bose.jpg" onclick="openLightbox(this)">
+<img src="images/rear.jpg"
+onclick="openLightbox(this)">
 
-    </div>
+<img src="images/side.jpg"
+onclick="openLightbox(this)">
 
-</section>
+<img src="images/interior.jpg"
+onclick="openLightbox(this)">
 
+<img src="images/seats.jpg"
+onclick="openLightbox(this)">
 
-<section class="about-section"
-id="about">
+<img src="images/rear-seats.jpg"
+onclick="openLightbox(this)">
 
-    <span>Alta Gama Automotive</span>
+<img src="images/bose.jpg"
+onclick="openLightbox(this)">
 
-    <h2>
-        Vehículos premium
-        seleccionados
-    </h2>
-
-    <p>
-        Transparencia, confianza y
-        selección de unidades con
-        historial contrastado.
-    </p>
+</div>
 
 </section>
 
@@ -209,41 +207,35 @@ id="about">
 <section class="contact-section"
 id="contact">
 
-    <h2>
-        ¿Te interesa este vehículo?
-    </h2>
+<h2>
+¿Te interesa este vehículo?
+</h2>
 
-    <p>
-        Solicita más información
-        o vídeo completo.
-    </p>
+<p>
+Solicita más información
+o vídeo completo.
+</p>
 
-    <button class="primary-btn"
-    onclick="openWhatsApp()">
-        Contactar por WhatsApp
-    </button>
+<button class="primary-btn"
+onclick="openWhatsApp()">
+
+CONTACTAR
+
+</button>
 
 </section>
-
-
-<footer>
-
-    <img src="logo.png"
-    class="footer-logo">
-
-    <p>Alta Gama Automotive</p>
-
-</footer>
 
 
 <div class="lightbox"
 id="lightbox">
 
-    <span onclick="closeLightbox()">
-        ✕
-    </span>
+<span onclick="closeLightbox()">
 
-    <img id="lightbox-img">
+✕
+
+</span>
+
+<img id="lightbox-img">
 
 </div>
 
