@@ -1,3 +1,12 @@
+// script.js
+
+function scrollToSection(id){
+document.getElementById(id)
+.scrollIntoView({
+behavior:"smooth"
+});
+}
+
 function openWhatsApp(){
 
 const phone = "34600000000";
@@ -12,15 +21,6 @@ window.open(
 
 }
 
-function scrollToSection(id){
-
-document.getElementById(id)
-.scrollIntoView({
-behavior:"smooth"
-});
-
-}
-
 function openLightbox(img){
 
 document.getElementById("lightbox")
@@ -28,12 +28,10 @@ document.getElementById("lightbox")
 
 document.getElementById("lightbox-img")
 .src = img.src;
-
 }
 
 function closeLightbox(){
 
 document.getElementById("lightbox")
 .style.display = "none";
-
 }
