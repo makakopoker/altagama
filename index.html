@@ -1,104 +1,93 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 <title>Alta Gama Automotive</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
 <header class="header">
 
-<div class="logo">
+    <div class="logo-wrap">
+        <img src="logo.png" class="logo" alt="Alta Gama Automotive">
+    </div>
 
-<img src="logo.png" alt="Alta Gama Automotive">
+    <nav class="nav">
+        <a href="#vehicles">Vehículos</a>
+        <a href="#equipment">Equipamiento</a>
+        <a href="#gallery">Galería</a>
+        <a href="#contact">Contacto</a>
+    </nav>
 
-</div>
-
-<nav class="nav">
-
-<a href="#vehicles">Vehículos</a>
-<a href="#about">Nosotros</a>
-<a href="#contact">Contacto</a>
-
-</nav>
-
-<button class="header-btn"
-onclick="scrollToSection('contact')">
-
-Contactar
-
-</button>
+    <button class="nav-btn"
+    onclick="scrollToSection('contact')">
+        Contactar
+    </button>
 
 </header>
 
 
 <section class="hero">
 
-<img src="images/hero-premium.jpg"
-class="hero-bg">
+    <img src="images/hero-premium.jpg"
+    class="hero-bg">
 
-<div class="hero-overlay"></div>
+    <div class="hero-overlay"></div>
 
-<div class="hero-content">
+    <div class="hero-content">
 
-<img src="logo.png"
-class="hero-logo">
+        <span class="premium-badge">
+            Premium Automotive
+        </span>
 
-<h1>
-ALTA GAMA
-</h1>
+        <h1>
+            ALTA GAMA
+        </h1>
 
-<h2>
-AUTOMOTIVE
-</h2>
+        <h2>
+            AUTOMOTIVE
+        </h2>
 
-<p class="hero-title">
+        <p class="hero-title">
+            AUTOMOCIÓN PREMIUM,<br>
+            SIN SORPRESAS.
+        </p>
 
-AUTOMOCIÓN PREMIUM,<br>
-SIN SORPRESAS.
+        <p class="hero-description">
+            Vehículos seleccionados con historial contrastado,
+            configuraciones premium y máxima transparencia.
+        </p>
 
-</p>
+        <div class="hero-buttons">
 
-<p class="hero-description">
+            <button class="primary-btn"
+            onclick="scrollToSection('vehicles')">
 
-Seleccionamos vehículos premium
-con historial contrastado,
-configuraciones superiores
-y transparencia total.
+                VER VEHÍCULOS
 
-</p>
+            </button>
 
-<div class="hero-buttons">
+            <button class="secondary-btn"
+            onclick="scrollToSection('contact')">
 
-<button class="primary-btn"
-onclick="scrollToSection('vehicles')">
+                CONTACTAR
 
-VER VEHÍCULOS
+            </button>
 
-</button>
+        </div>
 
-<button class="secondary-btn"
-onclick="scrollToSection('contact')">
-
-CONTACTAR
-
-</button>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
@@ -106,182 +95,155 @@ CONTACTAR
 <section class="vehicle-section"
 id="vehicles">
 
-<div class="vehicle-left">
+    <div class="section-heading">
 
-<span class="vehicle-label">
+        <span>Vehículo disponible</span>
 
-VEHÍCULO DISPONIBLE
+        <h3>
+            Infiniti QX70S<br>
+            5.0 V8 Premium
+        </h3>
 
-</span>
+    </div>
 
-<h2>
+    <div class="vehicle-grid">
 
-INFINITI QX70S<br>
-5.0 V8 PREMIUM
+        <div class="vehicle-image">
 
-</h2>
+            <img src="images/front2.jpg"
+            alt="Infiniti QX70S">
 
-<div class="vehicle-specs">
+        </div>
 
-<div>
-<strong>2015</strong>
-<span>AÑO</span>
-</div>
+        <div class="vehicle-info">
 
-<div>
-<strong>146.000</strong>
-<span>KILÓMETROS</span>
-</div>
+            <div class="price">
+                20.500€
+            </div>
 
-<div>
-<strong>GASOLINA</strong>
-<span>COMBUSTIBLE</span>
-</div>
+            <div class="spec-grid">
 
-<div>
-<strong>AUTO</strong>
-<span>CAMBIO</span>
-</div>
+                <div class="spec-box">
+                    <strong>2015</strong>
+                    <span>AÑO</span>
+                </div>
 
-<div>
-<strong>390 CV</strong>
-<span>POTENCIA</span>
-</div>
+                <div class="spec-box">
+                    <strong>146.000</strong>
+                    <span>KM</span>
+                </div>
 
-</div>
+                <div class="spec-box">
+                    <strong>390 CV</strong>
+                    <span>POTENCIA</span>
+                </div>
 
-<button class="outline-btn">
+                <div class="spec-box">
+                    <strong>AWD</strong>
+                    <span>TRACCIÓN</span>
+                </div>
 
-VER DETALLES
+                <div class="spec-box">
+                    <strong>AUTO</strong>
+                    <span>CAMBIO</span>
+                </div>
 
-</button>
+                <div class="spec-box">
+                    <strong>V8</strong>
+                    <span>MOTOR</span>
+                </div>
 
-</div>
+            </div>
 
-<div class="vehicle-right">
+            <p>
+                Infiniti QX70S nacional equipado
+                con motor 5.0 V8 atmosférico
+                de 390 CV, tracción AWD y
+                configuración premium muy equipada.
+                Vehículo muy cuidado con historial
+                de mantenimiento.
+            </p>
 
-<img src="images/front2.jpg"
-alt="Infiniti QX70S">
+        </div>
 
-</div>
+    </div>
 
 </section>
 
-<section class="equipment-section">
 
-    <div class="section-title">
+<section class="equipment-section"
+id="equipment">
 
-        <span>EQUIPAMIENTO DESTACADO</span>
+    <div class="section-heading">
 
-        <h2>
-            Equipamiento y extras
-        </h2>
+        <span>Equipamiento</span>
 
-        <p class="equipment-subtitle">
-            Unidad muy equipada con configuración premium,
-            motor V8 atmosférico y equipamiento superior.
-        </p>
+        <h3>
+            Configuración Premium
+        </h3>
 
     </div>
 
     <div class="equipment-grid">
 
-        <div class="equipment-card">Motor 5.0 V8 atmosférico – 390 CV</div>
-        <div class="equipment-card">Tracción total inteligente AWD</div>
-        <div class="equipment-card">Cambio automático de 7 velocidades</div>
-        <div class="equipment-card">Levas de cambio en el volante</div>
-
-        <div class="equipment-card">Acabado deportivo S Premium</div>
-        <div class="equipment-card">Suspensión deportiva S</div>
-        <div class="equipment-card">Llantas originales Infiniti 21”</div>
-        <div class="equipment-card">Pinzas de freno deportivas</div>
-
-        <div class="equipment-card">Faros Bi-Xenón adaptativos</div>
-        <div class="equipment-card">Luces diurnas LED</div>
-        <div class="equipment-card">Faros automáticos</div>
-        <div class="equipment-card">Sensor de lluvia</div>
-
-        <div class="equipment-card">Cámara 360º Around View Monitor</div>
-        <div class="equipment-card">Cámara trasera de aparcamiento</div>
-        <div class="equipment-card">Sensores delanteros de aparcamiento</div>
-        <div class="equipment-card">Sensores traseros de aparcamiento</div>
-
-        <div class="equipment-card">Navegación GPS integrada Infiniti</div>
-        <div class="equipment-card">Sistema de sonido BOSE Premium</div>
-        <div class="equipment-card">Bluetooth audio</div>
-        <div class="equipment-card">Bluetooth llamadas</div>
-
-        <div class="equipment-card">Pantalla multimedia Infiniti</div>
-        <div class="equipment-card">Disco duro multimedia</div>
-        <div class="equipment-card">USB / AUX</div>
-        <div class="equipment-card">Mandos multifunción en volante</div>
-
-        <div class="equipment-card">Asientos delanteros eléctricos</div>
-        <div class="equipment-card">Memoria de asientos</div>
-        <div class="equipment-card">Asientos calefactados</div>
-        <div class="equipment-card">Asientos ventilados</div>
-
-        <div class="equipment-card">Tapicería cuero premium acolchada</div>
-        <div class="equipment-card">Asientos deportivos Infiniti S</div>
-        <div class="equipment-card">Volante multifunción de cuero</div>
-        <div class="equipment-card">Volante regulable eléctricamente</div>
-
-        <div class="equipment-card">Climatizador automático bi-zona</div>
-        <div class="equipment-card">Techo solar eléctrico</div>
-        <div class="equipment-card">Cristales traseros tintados</div>
-        <div class="equipment-card">Acceso confort Keyless</div>
-
-        <div class="equipment-card">Arranque por botón</div>
-        <div class="equipment-card">Retrovisores eléctricos abatibles</div>
-        <div class="equipment-card">Retrovisor interior antideslumbrante</div>
-        <div class="equipment-card">Control de crucero</div>
-
-        <div class="equipment-card">Aviso involuntario de cambio de carril</div>
-        <div class="equipment-card">Asistencia anti-colisión frontal</div>
-        <div class="equipment-card">Control de estabilidad ESP</div>
-        <div class="equipment-card">Control de tracción</div>
-
-        <div class="equipment-card">Portón trasero eléctrico</div>
-        <div class="equipment-card">Libro de mantenimiento</div>
-        <div class="equipment-card">Historial de revisiones</div>
-        <div class="equipment-card">Dos llaves originales</div>
+        <div>Motor 5.0 V8 – 390 CV</div>
+        <div>Tracción AWD inteligente</div>
+        <div>Cambio automático 7 velocidades</div>
+        <div>Levas al volante</div>
+        <div>Suspensión deportiva S</div>
+        <div>Llantas originales 21”</div>
+        <div>Faros Bi-Xenón adaptativos</div>
+        <div>Cámara 360º</div>
+        <div>Sensores delanteros y traseros</div>
+        <div>Navegación Infiniti</div>
+        <div>Sonido BOSE Premium</div>
+        <div>Bluetooth audio y llamadas</div>
+        <div>Asientos eléctricos</div>
+        <div>Memoria de asientos</div>
+        <div>Asientos calefactados</div>
+        <div>Asientos ventilados</div>
+        <div>Tapicería cuero premium</div>
+        <div>Techo solar</div>
+        <div>Keyless Entry</div>
+        <div>Arranque por botón</div>
+        <div>Portón eléctrico</div>
+        <div>Control de crucero</div>
+        <div>Aviso de cambio carril</div>
+        <div>Asistencia anti-colisión</div>
+        <div>Climatizador bi-zona</div>
+        <div>Libro mantenimiento</div>
+        <div>Dos llaves originales</div>
 
     </div>
 
 </section>
-  
-<section class="gallery"
+
+
+<section class="gallery-section"
 id="gallery">
 
-<h3>Galería del vehículo</h3>
+    <div class="section-heading">
 
-<div class="gallery-grid">
+        <span>Galería</span>
 
-<img src="images/front.jpg"
-onclick="openLightbox(this)">
+        <h3>
+            Imágenes del vehículo
+        </h3>
 
-<img src="images/front2.jpg"
-onclick="openLightbox(this)">
+    </div>
 
-<img src="images/rear.jpg"
-onclick="openLightbox(this)">
+    <div class="gallery-grid">
 
-<img src="images/side.jpg"
-onclick="openLightbox(this)">
+        <img src="images/front.jpg" onclick="openLightbox(this)">
+        <img src="images/front2.jpg" onclick="openLightbox(this)">
+        <img src="images/rear.jpg" onclick="openLightbox(this)">
+        <img src="images/side.jpg" onclick="openLightbox(this)">
+        <img src="images/interior.jpg" onclick="openLightbox(this)">
+        <img src="images/seats.jpg" onclick="openLightbox(this)">
+        <img src="images/rear-seats.jpg" onclick="openLightbox(this)">
+        <img src="images/bose.jpg" onclick="openLightbox(this)">
 
-<img src="images/interior.jpg"
-onclick="openLightbox(this)">
-
-<img src="images/seats.jpg"
-onclick="openLightbox(this)">
-
-<img src="images/rear-seats.jpg"
-onclick="openLightbox(this)">
-
-<img src="images/bose.jpg"
-onclick="openLightbox(this)">
-
-</div>
+    </div>
 
 </section>
 
@@ -289,21 +251,21 @@ onclick="openLightbox(this)">
 <section class="contact-section"
 id="contact">
 
-<h2>
-¿Te interesa este vehículo?
-</h2>
+    <h3>
+        ¿Te interesa este vehículo?
+    </h3>
 
-<p>
-Solicita más información
-o vídeo completo.
-</p>
+    <p>
+        Solicita más información
+        o vídeo completo.
+    </p>
 
-<button class="primary-btn"
-onclick="openWhatsApp()">
+    <button class="primary-btn"
+    onclick="openWhatsApp()">
 
-CONTACTAR
+        CONTACTAR
 
-</button>
+    </button>
 
 </section>
 
@@ -311,13 +273,11 @@ CONTACTAR
 <div class="lightbox"
 id="lightbox">
 
-<span onclick="closeLightbox()">
+    <span onclick="closeLightbox()">
+        ✕
+    </span>
 
-✕
-
-</span>
-
-<img id="lightbox-img">
+    <img id="lightbox-img">
 
 </div>
 
