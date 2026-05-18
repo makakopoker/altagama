@@ -1,268 +1,467 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <title>Alta Gama Automotive</title>
+<title>Alta Gama Automotive</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- NAVBAR -->
-  <header class="navbar">
+<!-- NAVBAR -->
 
-    <div class="logo">
-      Alta Gama Automotive
-    </div>
+<header class="navbar">
 
-    <nav class="nav-links">
-      <a href="#inventory">Stock</a>
-      <a href="#about">Nosotros</a>
-      <a href="#contact">Contacto</a>
-    </nav>
+  <div class="logo-wrapper">
 
-  </header>
+    <h1 class="logo">
+      ALTA GAMA
+    </h1>
 
-  <!-- HERO -->
-  <section class="hero">
+    <span class="logo-sub">
+      AUTOMOTIVE
+    </span>
 
-    <div class="hero-overlay"></div>
+  </div>
 
-    <div class="hero-content">
+  <nav class="nav-links">
+    <a href="#inventory">Stock</a>
+    <a href="#about">Nosotros</a>
+    <a href="#contact">Contacto</a>
+  </nav>
 
-      <p class="hero-subtitle">
-        PREMIUM AUTOMOTIVE
-      </p>
+</header>
 
-      <h1>
-        Vehículos exclusivos<br>
-        seleccionados con criterio
-      </h1>
+<!-- HERO -->
 
-      <p class="hero-text">
-        Especialistas en vehículos premium de alta gama,
-        cuidadosamente seleccionados, revisados y preparados
-        para clientes exigentes.
-      </p>
+<section class="hero">
 
-      <a href="#inventory" class="hero-btn">
-        Ver vehículos
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+
+    <span class="hero-tag">
+      PREMIUM AUTOMOTIVE
+    </span>
+
+    <h2>
+      Vehículos exclusivos<br>
+      seleccionados con criterio
+    </h2>
+
+    <p>
+      Vehículos premium cuidadosamente seleccionados,
+      revisados y preparados para clientes exigentes.
+    </p>
+
+    <a href="#inventory" class="hero-btn">
+      Ver vehículos
+    </a>
+
+  </div>
+
+</section>
+
+<!-- INVENTORY -->
+
+<section class="inventory" id="inventory">
+
+  <div class="section-heading">
+
+    <span>STOCK DISPONIBLE</span>
+
+    <h2>
+      Vehículos Premium
+    </h2>
+
+  </div>
+
+  <!-- COCHE -->
+
+  <div class="car-card">
+
+    <!-- STICKY PANEL -->
+
+    <div class="sticky-panel">
+
+      <div class="sticky-badge">
+        V8 ATMOSFÉRICO
+      </div>
+
+      <h3>
+        Infiniti QX70S 5.0 V8 Premium AWD
+      </h3>
+
+      <div class="sticky-price">
+        20.500 €
+      </div>
+
+      <div class="sticky-info">
+        2015 · 146.000 km
+      </div>
+
+      <a
+        href="https://wa.me/34600000000"
+        class="sticky-whatsapp"
+        target="_blank"
+      >
+        Solicitar vídeo completo
       </a>
 
     </div>
 
-  </section>
+    <!-- CONTENT -->
 
-  <!-- INVENTORY -->
-  <section class="inventory" id="inventory">
+    <div class="car-main">
 
-    <div class="section-header">
-      <span>Stock disponible</span>
-      <h2>Vehículos Premium</h2>
-    </div>
+      <!-- IMAGEN PRINCIPAL -->
 
-    <div class="cars-grid">
+      <div class="main-gallery">
 
-      <!-- COCHE -->
-      <div class="car-card">
+        <img
+          src="images/front.jpg"
+          class="main-image"
+          id="mainImage"
+        >
 
-        <div class="car-image-wrapper">
+      </div>
 
-          <img
-  src="images/front.jpg"
-  alt="Infiniti QX70S"
-  class="car-image"
-/>
+      <!-- MINI GALERÍA -->
 
-          <div class="car-badge">
-            Disponible
-          </div>
+      <div class="thumbnail-gallery">
+
+        <img src="images/front.jpg" onclick="changeImage(this)">
+        <img src="images/front2.jpg" onclick="changeImage(this)">
+        <img src="images/side.jpg" onclick="changeImage(this)">
+        <img src="images/rear.jpg" onclick="changeImage(this)">
+        <img src="images/interior.jpg" onclick="changeImage(this)">
+        <img src="images/seats.jpg" onclick="changeImage(this)">
+        <img src="images/rear-seats.jpg" onclick="changeImage(this)">
+        <img src="images/bose.jpg" onclick="changeImage(this)">
+
+      </div>
+
+      <!-- INFO -->
+
+      <div class="car-info">
+
+        <div class="car-brand">
+          INFINITI
+        </div>
+
+        <h2>
+          QX70S 5.0 V8 Premium AWD
+        </h2>
+
+        <div class="specs-row">
+
+          <span>2015</span>
+          <span>146.000 km</span>
+          <span>390 CV</span>
+          <span>AWD</span>
+          <span>Gasolina</span>
 
         </div>
 
-        <div class="car-content">
+        <div class="description">
 
-          <div class="car-brand">
-            INFINITI
+          Unidad muy equipada con motor V8
+          atmosférico 5.0 de 390 CV, tracción
+          integral AWD inteligente, libro de
+          mantenimiento y configuración premium.
+
+        </div>
+
+      </div>
+
+      <!-- TABLA TÉCNICA -->
+
+      <div class="technical-box">
+
+        <h3>
+          Datos técnicos
+        </h3>
+
+        <div class="tech-grid">
+
+          <div class="tech-item">
+            <span>Motor</span>
+            <strong>5.0 V8</strong>
           </div>
 
-          <h3>
-            QX70S 5.0 V8 Premium AWD
-          </h3>
-
-          <div class="car-specs">
-
-            <span>2015</span>
-            <span>146.000 km</span>
-            <span>V8 5.0</span>
-            <span>AWD</span>
-
+          <div class="tech-item">
+            <span>Potencia</span>
+            <strong>390 CV</strong>
           </div>
 
-          <div class="car-price">
-            20.500 €
+          <div class="tech-item">
+            <span>Tracción</span>
+            <strong>AWD</strong>
           </div>
 
-          <div class="car-description">
-            Libro de mantenimiento · Full equip excepto detector de ángulo muerto
+          <div class="tech-item">
+            <span>Cambio</span>
+            <strong>Automático</strong>
           </div>
 
-          <button class="details-btn" onclick="toggleDetails()">
-            Ver detalles y equipamiento
-          </button>
+          <div class="tech-item">
+            <span>Año</span>
+            <strong>2015</strong>
+          </div>
 
-          <!-- DETALLES -->
-          <div id="carDetails" class="car-details">
-
-            <div class="gallery">
-
-  <img src="images/front.jpg" alt="Frontal Infiniti">
-
-  <img src="images/front2.jpg" alt="Frontal lateral Infiniti">
-
-  <img src="images/side.jpg" alt="Lateral Infiniti">
-
-  <img src="images/rear.jpg" alt="Trasera Infiniti">
-
-  <img src="images/interior.jpg" alt="Interior Infiniti">
-
-  <img src="images/seats.jpg" alt="Asientos Infiniti">
-
-  <img src="images/rear-seats.jpg" alt="Plazas traseras Infiniti">
-
-  <img src="images/bose.jpg" alt="BOSE Premium Audio">
-
-</div>
-
-            <div class="equipment-grid">
-
-              <div class="equipment-box">
-                <h4>Confort & Interior</h4>
-
-                <ul>
-                  <li>Asientos eléctricos con memoria</li>
-                  <li>Asientos calefactables</li>
-                  <li>Tapicería cuero premium</li>
-                  <li>Volante calefactable</li>
-                  <li>Climatizador bizona</li>
-                  <li>Techo solar eléctrico</li>
-                  <li>Keyless Entry & Start</li>
-                  <li>Portón eléctrico</li>
-                  <li>Cristales tintados</li>
-                  <li>Asientos deportivos S</li>
-                </ul>
-              </div>
-
-              <div class="equipment-box">
-                <h4>Tecnología & Multimedia</h4>
-
-                <ul>
-                  <li>BOSE Premium Audio</li>
-                  <li>Navegación GPS</li>
-                  <li>Bluetooth</li>
-                  <li>USB Multimedia</li>
-                  <li>Cámara 360º</li>
-                  <li>Cámara trasera</li>
-                  <li>Sensores parking delanteros</li>
-                  <li>Sensores parking traseros</li>
-                  <li>Pantalla multimedia Infiniti</li>
-                </ul>
-              </div>
-
-              <div class="equipment-box">
-                <h4>Seguridad</h4>
-
-                <ul>
-                  <li>AWD Inteligente</li>
-                  <li>ABS / ESP</li>
-                  <li>Control crucero</li>
-                  <li>Faros Bi-Xenón adaptativos</li>
-                  <li>Sensor lluvia</li>
-                  <li>Luces automáticas</li>
-                  <li>ISOFIX</li>
-                  <li>Full equip excepto ángulo muerto</li>
-                </ul>
-              </div>
-
-              <div class="equipment-box">
-                <h4>Prestaciones & Sport</h4>
-
-                <ul>
-                  <li>Motor V8 5.0 390CV</li>
-                  <li>Cambio automático secuencial</li>
-                  <li>Levas en volante</li>
-                  <li>Modo Sport</li>
-                  <li>Suspensión deportiva S</li>
-                  <li>Llantas deportivas</li>
-                </ul>
-              </div>
-
-            </div>
-
-            <a
-              href="https://wa.me/34600000000"
-              target="_blank"
-              class="whatsapp-btn"
-            >
-              Contactar por WhatsApp
-            </a>
-
+          <div class="tech-item">
+            <span>Kilómetros</span>
+            <strong>146.000 km</strong>
           </div>
 
         </div>
 
       </div>
 
+      <!-- POR QUÉ ESTA UNIDAD -->
+
+      <div class="special-section">
+
+        <h3>
+          ¿Por qué esta unidad es especial?
+        </h3>
+
+        <ul>
+
+          <li>Motor V8 atmosférico 5.0 de 390 CV</li>
+
+          <li>Versión Premium AWD muy equipada</li>
+
+          <li>Configuración Full Equip</li>
+
+          <li>Libro de mantenimiento</li>
+
+          <li>Unidad muy cuidada</li>
+
+          <li>Configuración difícil de encontrar</li>
+
+          <li>SUV premium exclusivo</li>
+
+        </ul>
+
+      </div>
+
+      <!-- EQUIPAMIENTO -->
+
+      <button
+        class="details-btn"
+        onclick="toggleDetails()"
+      >
+        Ver equipamiento completo
+      </button>
+
+      <div
+        class="equipment-wrapper"
+        id="carDetails"
+      >
+
+        <div class="equipment-grid">
+
+          <div class="equipment-box">
+            <h4>Confort & Interior</h4>
+
+            <ul>
+              <li>Asientos eléctricos con memoria</li>
+              <li>Asientos calefactables</li>
+              <li>Tapicería cuero premium</li>
+              <li>Volante calefactable</li>
+              <li>Climatizador bizona</li>
+              <li>Techo solar eléctrico</li>
+              <li>Keyless Entry & Start</li>
+              <li>Portón eléctrico</li>
+              <li>Cristales tintados</li>
+            </ul>
+          </div>
+
+          <div class="equipment-box">
+            <h4>Tecnología</h4>
+
+            <ul>
+              <li>BOSE Premium Audio</li>
+              <li>Navegación GPS</li>
+              <li>Bluetooth</li>
+              <li>Cámara 360º</li>
+              <li>Sensores parking</li>
+              <li>USB multimedia</li>
+            </ul>
+          </div>
+                    <div class="equipment-box">
+            <h4>Seguridad</h4>
+
+            <ul>
+              <li>ABS / ESP</li>
+              <li>Control crucero</li>
+              <li>Faros Bi-Xenón adaptativos</li>
+              <li>Sensor lluvia</li>
+              <li>Luces automáticas</li>
+              <li>ISOFIX</li>
+              <li>Full equip excepto ángulo muerto</li>
+            </ul>
+          </div>
+
+          <div class="equipment-box">
+            <h4>Prestaciones & Sport</h4>
+
+            <ul>
+              <li>Motor V8 atmosférico 5.0 390CV</li>
+              <li>Cambio automático secuencial</li>
+              <li>Levas en volante</li>
+              <li>Modo Sport</li>
+              <li>Suspensión deportiva S</li>
+              <li>Llantas deportivas</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- CTA PREMIUM -->
+
+      <div class="premium-cta">
+
+        <h3>
+          Solicita un vídeo completo de la unidad
+        </h3>
+
+        <p>
+          Recibe por WhatsApp un vídeo detallado
+          del vehículo, arranque en frío, interior,
+          exterior y detalles.
+        </p>
+
+        <a
+          href="https://wa.me/34600000000"
+          target="_blank"
+          class="cta-btn"
+        >
+          Solicitar vídeo completo
+        </a>
+
+      </div>
+
     </div>
 
-  </section>
+  </div>
 
-  <!-- ABOUT -->
-  <section class="about" id="about">
+</section>
 
-    <div class="section-header">
-      <span>Sobre nosotros</span>
-      <h2>Alta Gama Automotive</h2>
-    </div>
+<!-- ABOUT -->
 
-    <p class="about-text">
-      Vehículos premium cuidadosamente seleccionados,
-      priorizando historial, mantenimiento, equipamiento
-      y configuraciones exclusivas.
-    </p>
+<section class="about" id="about">
 
-  </section>
+  <div class="section-heading">
 
-  <!-- FOOTER -->
-  <footer class="footer" id="contact">
+    <span>SOBRE NOSOTROS</span>
 
-    <h3>
+    <h2>
       Alta Gama Automotive
-    </h3>
+    </h2>
+
+  </div>
+
+  <div class="about-box">
 
     <p>
-      Vehículos premium cuidadosamente seleccionados
+      Seleccionamos vehículos premium
+      cuidadosamente escogidos, priorizando
+      historial, equipamiento, estado y
+      configuraciones exclusivas.
     </p>
 
-  </footer>
+  </div>
 
-  <a
-    href="https://wa.me/34600000000"
-    class="floating-whatsapp"
-    target="_blank"
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+  <div class="section-heading">
+
+    <span>CONTACTO</span>
+
+    <h2>
+      Hablemos
+    </h2>
+
+  </div>
+
+  <div class="contact-box">
+
+    <p>
+      ¿Quieres más fotos, vídeo completo
+      o resolver cualquier duda?
+    </p>
+
+    <a
+      href="https://wa.me/34600000000"
+      target="_blank"
+      class="contact-btn"
+    >
+      Contactar por WhatsApp
+    </a>
+
+  </div>
+
+</section>
+
+<!-- LIGHTBOX -->
+
+<div class="lightbox" id="lightbox">
+
+  <span
+    class="lightbox-close"
+    onclick="closeLightbox()"
   >
-    WhatsApp
-  </a>
+    ×
+  </span>
 
-  <script src="script.js"></script>
+  <img
+    id="lightboxImage"
+    src=""
+  >
+
+</div>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+  <div class="footer-logo">
+    ALTA GAMA AUTOMOTIVE
+  </div>
+
+  <p>
+    Vehículos premium cuidadosamente seleccionados
+  </p>
+
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+
+<a
+  href="https://wa.me/34600000000"
+  target="_blank"
+  class="floating-whatsapp"
+>
+  WhatsApp
+</a>
+
+<script src="script.js"></script>
 
 </body>
 </html>
