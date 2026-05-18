@@ -699,3 +699,59 @@ body {
     grid-template-columns:1fr;
   }
 }
+/* LIGHTBOX */
+
+.lightbox{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:
+  rgba(0,0,0,.96);
+
+  z-index:999999;
+
+  justify-content:center;
+  align-items:center;
+}
+
+.lightbox img{
+  max-width:92%;
+  max-height:90vh;
+  border-radius:26px;
+}
+
+.lightbox-close{
+  position:absolute;
+  top:30px;
+  right:40px;
+  font-size:60px;
+  color:white;
+  cursor:pointer;
+}
+
+.lightbox-arrow{
+  position:absolute;
+  top:50%;
+  transform:
+  translateY(-50%);
+
+  width:72px;
+  height:72px;
+  border:none;
+  border-radius:999px;
+
+  background:
+  rgba(255,255,255,.12);
+
+  color:white;
+  cursor:pointer;
+  font-size:40px;
+}
+
+.left{
+  left:40px;
+}
+
+.right{
+  right:40px;
+}
