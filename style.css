@@ -551,3 +551,66 @@ body {
     height: 380px;
   }
 }
+/* MAIN IMAGE ANIMATION */
+
+.main-image {
+  transition:
+  opacity .25s ease,
+  transform .35s ease;
+}
+
+.main-image:hover {
+  transform: scale(1.01);
+}
+
+/* THUMBNAILS */
+
+.thumbnail-gallery img {
+  border: 2px solid transparent;
+}
+
+.thumbnail-gallery img:hover {
+  border-color:
+  rgba(255,255,255,.3);
+}
+
+.active-thumbnail {
+  border: 2px solid white !important;
+  transform: scale(1.03);
+}
+
+/* LIGHTBOX PREMIUM */
+
+.lightbox img {
+  animation:
+  zoomIn .25s ease;
+}
+
+@keyframes zoomIn {
+
+  from {
+    opacity:0;
+    transform:scale(.95);
+  }
+
+  to {
+    opacity:1;
+    transform:scale(1);
+  }
+
+}
+
+/* SCROLL ANIMATIONS */
+
+.hidden {
+  opacity: 0;
+  transform: translateY(35px);
+  transition:
+  opacity .8s ease,
+  transform .8s ease;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
