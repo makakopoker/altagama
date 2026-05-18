@@ -4,11 +4,11 @@ function toggleDetails() {
 
   if (details.style.display === "block") {
     details.style.display = "none";
-    button.textContent = "Ver detalles y equipamiento";
+    button.textContent = "Ver equipamiento completo";
   } else {
     details.style.display = "block";
-    button.textContent = "Ocultar detalles";
-    
+    button.textContent = "Ocultar equipamiento";
+
     details.scrollIntoView({
       behavior: "smooth",
       block: "start"
@@ -16,29 +16,91 @@ function toggleDetails() {
   }
 }
 
-// NAVBAR PREMIUM SCROLL EFFECT
+/* CAMBIAR FOTO PRINCIPAL */
 
-window.addEventListener("scroll", () => {
-  const navbar = document.querySelector(".navbar");
+function changeImage(image) {
 
-  if (window.scrollY > 50) {
-    navbar.style.background = "rgba(0,0,0,.90)";
-    navbar.style.backdropFilter = "blur(25px)";
-  } else {
-    navbar.style.background = "rgba(0,0,0,.55)";
+  const mainImage = document.getElementById("mainImage");
+
+  mainImage.style.opacity = "0";
+
+  setTimeout(() => {
+    mainImage.src = image.src;
+    mainImage.style.opacity = "1";
+  }, 150);
+
+  document.querySelectorAll(".thumbnail-gallery img")
+  .forEach(img => img.classList.remove("active-thumbnail"));
+
+  image.classList.add("active-thumbnail");
+}
+
+/* LIGHTBOX PREMIUM */
+
+const mainImage = document.getElementById("mainImage");
+const lightbox = document.getElementById("lightbox");
+const lightboxImage = document.getElementById("lightboxImage");
+
+mainImage.addEventListener("click", () => {
+  lightbox.style.display = "flex";
+  lightboxImage.src = mainImage.src;
+  document.body.style.overflow = "hidden";
+});
+
+function closeLightbox() {
+  lightbox.style.display = "none";
+  document.body.style.overflow = "auto";
+}
+
+window.addEventListener("click", (e) => {
+  if (e.target === lightbox) {
+    closeLightbox();
   }
 });
 
-// HERO BUTTON SMOOTH SCROLL
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    closeLightbox();
+  }
+});
 
-document.querySelector(".hero-btn")
-.addEventListener("click", function(e){
+/* NAVBAR PREMIUM */
 
-  e.preventDefault();
+window.addEventListener("scroll", () => {
 
-  document.querySelector("#inventory")
-  .scrollIntoView({
-    behavior: "smooth"
+  const navbar =
+    document.querySelector(".navbar");
+
+  if (window.scrollY > 50) {
+    navbar.style.background =
+      "rgba(0,0,0,.88)";
+  } else {
+    navbar.style.background =
+      "rgba(0,0,0,.45)";
+  }
+});
+
+/* ANIMACIONES PREMIUM */
+
+const observer =
+new IntersectionObserver((entries) => {
+
+  entries.forEach(entry => {
+
+    if(entry.isIntersecting){
+      entry.target.classList.add("show");
+    }
+
   });
 
+},{
+  threshold: 0.15
+});
+
+document.querySelectorAll(
+  ".technical-box, .special-section, .equipment-box, .premium-cta"
+)
+.forEach(el => {
+  el.classList.add("hidden");
+  observer.observe(el);
 });
