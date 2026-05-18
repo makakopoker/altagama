@@ -1,117 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Alta Gama Automotive</title>
+<title>Alta Gama Automotive</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- NAVBAR -->
-  <header class="navbar">
+<header class="navbar">
+  <div class="logo">
+    Alta Gama Automotive
+  </div>
+</header>
 
-    <div class="logo">
-      Alta Gama Automotive
-    </div>
-
-    <nav>
-      <a href="#inventory">Stock</a>
-      <a href="#about">Nosotros</a>
-      <a href="#contact">Contacto</a>
-    </nav>
-
-  </header>
-
-  <!-- HERO -->
-  <section class="hero">
-
-    <div class="hero-content">
-
-      <p class="hero-subtitle">
-        Concesionario Premium
-      </p>
-
-      <h1>
-        Vehículos exclusivos<br>
-        seleccionados con criterio
-      </h1>
-
-      <p class="hero-text">
-        Vehículos premium cuidadosamente seleccionados,
-        revisados y preparados para clientes exigentes.
-      </p>
-
-      <a href="#inventory" class="hero-btn">
-        Ver vehículos
-      </a>
-
-    </div>
-
-  </section>
-
-  <!-- INVENTORY -->
-  <section class="inventory" id="inventory">
-
-    <div class="section-title">
-      Vehículos disponibles
-    </div>
-
-    <!-- AQUÍ LOS COCHES SE GENERAN SOLOS -->
-    <div class="cars-grid"></div>
-
-  </section>
-
-  <!-- ABOUT -->
-  <section class="about" id="about">
-
-    <div class="section-title">
-      Alta Gama Automotive
-    </div>
-
-    <p class="about-text">
-      Seleccionamos vehículos premium de alta gama,
-      priorizando historial, mantenimiento, estado y
-      configuraciones exclusivas.
+<section class="hero">
+  <div class="hero-content">
+    <p class="hero-subtitle">
+      Concesionario Premium
     </p>
 
-  </section>
+    <h1>
+      Vehículos exclusivos<br>
+      seleccionados con criterio
+    </h1>
 
-  <!-- MODAL DINÁMICO -->
-  <div class="modal" id="modal"></div>
+    <a href="#inventory" class="hero-btn">
+      Ver vehículos
+    </a>
+  </div>
+</section>
 
-  <!-- FOOTER -->
-  <footer class="footer" id="contact">
+<section class="inventory" id="inventory">
 
-    <div class="footer-logo">
-      Alta Gama Automotive
-    </div>
+  <div class="section-title">
+    Vehículos disponibles
+  </div>
 
-    <p>
-      Vehículos premium cuidadosamente seleccionados.
-    </p>
+  <div class="cars-grid"></div>
 
-  </footer>
+</section>
 
-  <!-- WHATSAPP -->
-  <a
-    href="https://wa.me/34600000000"
-    target="_blank"
-    class="floating-whatsapp"
-  >
-    WhatsApp
-  </a>
+<div id="modal" class="modal"></div>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
