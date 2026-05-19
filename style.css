@@ -35,23 +35,27 @@ body{
 
   width:100%;
 
+  height:88px;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  padding:0 90px;
+
   z-index:9999;
 
   background:
-  rgba(7,7,7,.72);
+  rgba(7,7,7,.78);
 
   backdrop-filter:
-  blur(18px);
+  blur(14px);
 
   -webkit-backdrop-filter:
-  blur(18px);
+  blur(14px);
 
   border-bottom:
-  1px solid rgba(255,255,255,.05);
-
-  transition:
-  background .3s ease,
-  border-color .3s ease;
+  1px solid rgba(255,255,255,.04);
 }
 
 
