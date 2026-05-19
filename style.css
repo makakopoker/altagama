@@ -6,17 +6,17 @@
 
 :root{
 
-  --gold:#c69b5f;
-  --gold-soft:#9f7c47;
+  --gold:#c6a06a;
+  --gold-soft:#8d6f45;
 
-  --bg:#060606;
+  --bg:#050505;
   --card:#0b0b0b;
 
-  --text:#f5f5f5;
-  --muted:#8c8c8c;
+  --text:#f4f4f4;
+  --muted:#9a9a9a;
 
   --border:
-  rgba(198,155,95,.12);
+  rgba(198,160,106,.12);
 }
 
 html{
@@ -25,8 +25,11 @@ html{
 
 body{
 
-  background:var(--bg);
-  color:var(--text);
+  background:
+  #050505;
+
+  color:
+  var(--text);
 
   font-family:
   'Inter',
@@ -48,24 +51,24 @@ body{
   z-index:9999;
 
   backdrop-filter:
-  blur(18px);
+  blur(16px);
 
   background:
-  rgba(0,0,0,.48);
+  rgba(0,0,0,.42);
 
   border-bottom:
   1px solid
   rgba(255,255,255,.04);
 }
 
-.navbar-inner{
+.nav-container{
 
   max-width:1450px;
 
   margin:auto;
 
   padding:
-  24px 5%;
+  20px 5%;
 
   display:flex;
   justify-content:space-between;
@@ -76,24 +79,28 @@ body{
 
   display:flex;
   align-items:center;
-  gap:16px;
+  gap:14px;
 
   text-decoration:none;
 }
 
 .logo-box{
 
-  width:58px;
-  height:58px;
-
-  border:
-  1px solid var(--border);
+  width:56px;
+  height:56px;
 
   border-radius:14px;
+
+  border:
+  1px solid
+  rgba(198,160,106,.14);
 
   display:flex;
   justify-content:center;
   align-items:center;
+
+  color:
+  var(--gold);
 
   font-family:
   'Cormorant Garamond',
@@ -101,33 +108,36 @@ body{
 
   font-size:2rem;
   font-weight:700;
-
-  color:var(--gold);
 }
 
 .brand-copy h1{
 
   font-size:1.9rem;
+
   letter-spacing:4px;
+
+  font-weight:600;
 }
 
 .brand-copy span{
 
   color:var(--gold);
 
+  font-size:.74rem;
+
   letter-spacing:5px;
-  font-size:.75rem;
 }
 
 .nav-links{
 
   display:flex;
-  gap:46px;
+  gap:42px;
 }
 
 .nav-links a{
 
-  color:#ddd;
+  color:#d3d3d3;
+
   text-decoration:none;
 
   transition:.3s;
@@ -141,9 +151,9 @@ body{
 
 .hero{
 
-  min-height:78vh;
-
   position:relative;
+
+  height:620px;
 
   display:flex;
   align-items:center;
@@ -152,44 +162,51 @@ body{
 
   linear-gradient(
     90deg,
-    rgba(0,0,0,.98) 0%,
-    rgba(0,0,0,.92) 18%,
-    rgba(0,0,0,.78) 34%,
-    rgba(0,0,0,.38) 58%,
-    rgba(0,0,0,.06) 76%
+    rgba(0,0,0,.97) 0%,
+    rgba(0,0,0,.90) 18%,
+    rgba(0,0,0,.72) 36%,
+    rgba(0,0,0,.28) 58%,
+    rgba(0,0,0,.05) 76%
   ),
 
   url("images/hero-premium.jpg");
 
   background-size:cover;
+
   background-position:
   center right;
-
-  padding:
-  120px 6%
-  80px;
 }
 
 .hero-inner{
 
   width:100%;
   max-width:1450px;
+
   margin:auto;
+
+  padding:
+  0 5%;
 }
 
-.hero-copy{
+.hero-content{
 
-  max-width:520px;
+  max-width:500px;
+
+  margin-top:45px;
 }
 
-.hero-label{
+.hero-kicker{
 
-  color:var(--gold);
+  display:block;
+
+  color:
+  var(--gold);
 
   letter-spacing:4px;
-  font-size:.9rem;
 
-  margin-bottom:22px;
+  font-size:.84rem;
+
+  margin-bottom:20px;
 }
 
 .hero h2{
@@ -198,9 +215,10 @@ body{
   'Cormorant Garamond',
   serif;
 
-  font-size:5rem;
+  font-size:4.8rem;
 
-  line-height:.94;
+  line-height:.92;
+
   font-weight:500;
 
   margin-bottom:24px;
@@ -208,15 +226,17 @@ body{
 
 .hero p{
 
-  color:#b3b3b3;
+  color:#b2b2b2;
 
-  line-height:1.9;
+  line-height:1.85;
 
-  margin-bottom:36px;
+  max-width:420px;
+
+  margin-bottom:34px;
 }
 
 .hero-btn,
-.vehicle-btn{
+.card-btn{
 
   display:inline-flex;
   justify-content:center;
@@ -225,20 +245,23 @@ body{
   border:
   1px solid var(--gold);
 
-  color:var(--gold);
-
   text-decoration:none;
 
+  color:
+  var(--gold);
+
   padding:
-  18px 28px;
+  16px 28px;
 
   transition:.3s;
 }
 
 .hero-btn:hover,
-.vehicle-btn:hover{
+.card-btn:hover{
 
-  background:var(--gold);
+  background:
+  var(--gold);
+
   color:black;
 }
 
@@ -247,176 +270,171 @@ body{
 .stock{
 
   padding:
-  80px 6%;
+  55px 5%;
 }
 
-.section-header{
+.stock-header{
 
   display:flex;
   align-items:center;
-  gap:18px;
+  gap:16px;
 
-  margin-bottom:30px;
+  margin-bottom:26px;
 }
 
-.section-line{
+.gold-line{
 
   width:48px;
   height:2px;
 
-  background:var(--gold);
+  background:
+  var(--gold);
 }
 
-.section-tag{
+.stock-header span{
 
-  color:var(--gold);
   letter-spacing:4px;
-  font-size:.8rem;
 
-  margin-bottom:6px;
+  color:#d8d8d8;
+
+  font-size:.9rem;
 }
-
-.section-copy h3{
-
-  font-family:
-  'Cormorant Garamond',
-  serif;
-
-  font-size:2.6rem;
-  font-weight:500;
-}
-
-/* VEHICLES */
 
 .stock-grid{
 
   display:grid;
+
   grid-template-columns:
   1fr 1fr;
 
-  gap:26px;
+  gap:24px;
 }
 
-.vehicle-card{
+/* CARD */
+
+.car-card{
 
   background:
-  linear-gradient(
-    180deg,
-    #0d0d0d,
-    #090909
-  );
+  #0a0a0a;
 
   border:
   1px solid
   rgba(255,255,255,.05);
 
-  border-radius:24px;
+  border-radius:20px;
 
   overflow:hidden;
 
   display:grid;
 
   grid-template-columns:
-  56% 44%;
+  54% 46%;
 
-  min-height:290px;
+  height:295px;
 }
 
-.vehicle-image{
+.car-image{
 
   background-size:cover;
+
   background-position:center;
 
   filter:
-  brightness(.88)
-  contrast(1.08);
+  brightness(.92)
+  contrast(1.06);
 }
 
-.vehicle-content{
+.car-content{
 
-  padding:34px;
+  padding:
+  34px;
 
   display:flex;
   flex-direction:column;
   justify-content:center;
 }
 
-.vehicle-brand{
+.car-brand{
 
-  color:var(--gold);
+  color:
+  var(--gold);
 
   letter-spacing:4px;
-  font-size:.8rem;
+
+  font-size:.78rem;
 
   margin-bottom:18px;
 }
 
-.vehicle-content h2{
+.car-content h3{
 
   font-family:
   'Cormorant Garamond',
   serif;
 
   font-size:2.2rem;
+
   line-height:1.05;
 
   font-weight:500;
 
-  margin-bottom:18px;
+  margin-bottom:16px;
 }
 
-.vehicle-price{
+.car-price{
 
-  color:var(--gold);
+  color:
+  var(--gold);
 
-  font-size:2.2rem;
+  font-size:2rem;
   font-weight:600;
 
   margin-bottom:14px;
 }
 
-.vehicle-meta{
+.car-meta{
 
-  color:#8b8b8b;
+  color:#888;
 
-  margin-bottom:26px;
+  margin-bottom:24px;
 }
 
-/* BESPOKE */
+/* PREMIUM SEARCH */
 
-.bespoke{
+.premium-search{
 
   padding:
-  0 6% 55px;
+  0 5% 55px;
 }
 
-.bespoke-wrapper{
+.premium-wrapper{
 
-  background:#090909;
-
-  border-radius:26px;
-
-  overflow:hidden;
+  background:
+  #090909;
 
   border:
   1px solid
   rgba(255,255,255,.05);
 
+  border-radius:22px;
+
+  overflow:hidden;
+
   display:grid;
 
   grid-template-columns:
-  28% 44% 28%;
+  26% 44% 30%;
 
-  min-height:320px;
+  height:290px;
 }
 
-.bespoke-visual{
+.premium-visual{
 
   background:
 
   linear-gradient(
-    rgba(0,0,0,.52),
-    rgba(0,0,0,.52)
+    rgba(0,0,0,.45),
+    rgba(0,0,0,.45)
   ),
 
   url("images/hero.jpg");
@@ -425,16 +443,29 @@ body{
   background-position:center;
 }
 
-.bespoke-main{
+.premium-main{
 
-  padding:48px;
+  padding:
+  42px 46px;
 
   display:flex;
   flex-direction:column;
   justify-content:center;
 }
 
-.bespoke-main h3{
+.premium-tag{
+
+  color:
+  var(--gold);
+
+  letter-spacing:4px;
+
+  font-size:.8rem;
+
+  margin-bottom:18px;
+}
+
+.premium-main h3{
 
   font-family:
   'Cormorant Garamond',
@@ -442,23 +473,25 @@ body{
 
   font-size:3rem;
 
+  line-height:1;
+
   font-weight:500;
 
-  margin-bottom:20px;
+  margin-bottom:18px;
 }
 
-.bespoke-main p{
+.premium-main p{
 
   color:#aaa;
 
-  line-height:1.9;
+  line-height:1.8;
 
-  margin-bottom:28px;
+  margin-bottom:24px;
 }
 
-.bespoke-right{
+.premium-right{
 
-  padding:45px;
+  padding:40px;
 
   display:flex;
   flex-wrap:wrap;
@@ -466,54 +499,55 @@ body{
   align-content:center;
 }
 
-.brand-pill{
+.premium-pill{
 
   border:
   1px solid
   rgba(255,255,255,.08);
 
+  border-radius:999px;
+
   padding:
   12px 18px;
-
-  border-radius:999px;
 }
 
 /* TRUST */
 
-.trust-bar{
+.trust-strip{
 
   padding:
-  0 6% 70px;
+  0 5% 65px;
 
   display:grid;
 
   grid-template-columns:
   repeat(4,1fr);
 
-  gap:16px;
+  gap:14px;
 }
 
-.trust-item{
+.trust-card{
+
+  background:#090909;
 
   border:
   1px solid
   rgba(255,255,255,.05);
 
-  border-radius:20px;
+  border-radius:18px;
 
-  background:#090909;
-
-  padding:26px;
+  padding:24px;
 }
 
-.trust-item h4{
+.trust-card h4{
 
-  color:var(--gold);
+  color:
+  var(--gold);
 
   margin-bottom:8px;
 }
 
-.trust-item p{
+.trust-card p{
   color:#888;
 }
 
@@ -525,12 +559,14 @@ body{
   1px solid
   rgba(255,255,255,.05);
 
-  padding:40px 6%;
+  padding:
+  38px 5%;
 }
 
-.footer-inner{
+.footer-container{
 
   max-width:1450px;
+
   margin:auto;
 
   display:flex;
@@ -542,18 +578,18 @@ body{
 
   display:flex;
   align-items:center;
-  gap:15px;
+  gap:14px;
 }
 
 .footer-links{
 
   display:flex;
-  gap:28px;
+  gap:26px;
 }
 
 .footer-links a{
 
-  color:#999;
+  color:#888;
   text-decoration:none;
 }
 
@@ -561,24 +597,29 @@ body{
 
 @media(max-width:1100px){
 
+  .hero{
+    height:auto;
+    padding:140px 0 80px;
+  }
+
   .hero h2{
-    font-size:3.5rem;
+    font-size:3.4rem;
   }
 
   .stock-grid,
-  .trust-bar{
+  .trust-strip{
 
     grid-template-columns:1fr;
   }
 
-  .vehicle-card,
-  .bespoke-wrapper{
+  .car-card,
+  .premium-wrapper{
 
     grid-template-columns:1fr;
+    height:auto;
   }
 
   .nav-links{
     display:none;
   }
-
 }
