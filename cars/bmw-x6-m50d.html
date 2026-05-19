@@ -944,9 +944,33 @@ document.getElementById(
 "mainImage"
 ).src = element.src;
 
+/* QUITAR ACTIVA A TODAS */
+
+document
+.querySelectorAll(
+".thumbnail-gallery img"
+)
+.forEach(img=>{
+
+img.classList.remove(
+"active-thumb"
+);
+
+});
+
+/* ACTIVAR LA NUEVA */
+
+element.classList.add(
+"active-thumb"
+);
+
+/* ACTUALIZAR INDEX */
+
 currentIndex =
 images.indexOf(
-element.src.split(window.location.origin)[1]
+element.src.split(
+window.location.origin
+)[1]
 );
 
 }
