@@ -860,3 +860,55 @@ body{
   box-shadow:
   0 0 24px rgba(198,160,106,.12);
 }
+/* PREMIUM SEARCH CINEMATIC */
+
+.premium-container{
+
+  position:relative;
+
+  transition:
+  transform .4s ease,
+  box-shadow .4s ease,
+  border-color .4s ease;
+}
+
+.premium-container:hover{
+
+  transform:
+  translateY(-4px);
+
+  border-color:
+  rgba(198,160,106,.16);
+
+  box-shadow:
+  0 30px 80px rgba(0,0,0,.45);
+}
+
+
+/* TEXTO MÁS PREMIUM */
+
+.premium-content h3{
+
+  line-height:.95;
+
+  letter-spacing:-.02em;
+}
+
+.premium-content p{
+
+  max-width:500px;
+}
+
+
+/* BOTÓN MÁS CARO */
+
+.premium-content .hero-btn{
+
+  width:fit-content;
+}
+
+.premium-content .hero-btn:hover{
+
+  box-shadow:
+  0 0 28px rgba(198,160,106,.14);
+}
