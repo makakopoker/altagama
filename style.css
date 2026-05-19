@@ -533,7 +533,11 @@ body{
   grid-template-columns:
   repeat(4,1fr);
 
-  gap:14px;
+  gap:16px;
+
+  max-width:1450px;
+
+  margin:auto;
 }
 
 .trust-card{
