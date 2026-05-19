@@ -808,16 +808,111 @@ SOLICITAR INFORMACIÓN
 
 <script>
 
-function changeImage(element){
+const images = [
+
+"../images/front.jpg",
+"../images/front2.jpg",
+"../images/side.jpg",
+"../images/rear.jpg",
+"../images/interior.jpg",
+"../images/seats.jpg",
+"../images/rear-seats.jpg",
+"../images/bose.jpg"
+
+];
+
+let currentIndex = 0;
+
+function selectImage(element){
 
 document.getElementById(
 "mainImage"
 ).src = element.src;
 
+currentIndex =
+images.indexOf(
+element.src.split(window.location.origin)[1]
+);
+
 }
 
-</script>
+document.getElementById(
+"mainImage"
+).addEventListener(
+"click",
+openLightbox
+);
 
+function openLightbox(){
+
+document.getElementById(
+"lightbox"
+).classList.add("active");
+
+document.getElementById(
+"lightboxImage"
+).src =
+images[currentIndex];
+}
+
+function closeLightbox(){
+
+document.getElementById(
+"lightbox"
+).classList.remove("active");
+}
+
+function nextImage(){
+
+currentIndex++;
+
+if(
+currentIndex >= images.length
+){
+currentIndex = 0;
+}
+
+document.getElementById(
+"lightboxImage"
+).src =
+images[currentIndex];
+}
+
+function prevImage(){
+
+currentIndex--;
+
+if(currentIndex < 0){
+
+currentIndex =
+images.length - 1;
+}
+
+document.getElementById(
+"lightboxImage"
+).src =
+images[currentIndex];
+}
+
+document.addEventListener(
+"keydown",
+(e)=>{
+
+if(e.key==="Escape"){
+closeLightbox();
+}
+
+if(e.key==="ArrowRight"){
+nextImage();
+}
+
+if(e.key==="ArrowLeft"){
+prevImage();
+}
+
+});
+
+</script>
 <style>
 
 /* ==========================
