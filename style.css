@@ -813,3 +813,54 @@ body{
 
   color:#C6A06A;
 }
+/* HOVER PREMIUM VEHICULOS */
+
+.car-card{
+
+  transition:
+  transform .45s ease,
+  box-shadow .45s ease,
+  border-color .45s ease;
+
+  will-change:transform;
+}
+
+.car-card:hover{
+
+  transform:
+  translateY(-8px);
+
+  border-color:
+  rgba(198,160,106,.22);
+
+  box-shadow:
+  0 30px 70px rgba(0,0,0,.45);
+}
+
+.car-image{
+
+  overflow:hidden;
+}
+
+.car-image img{
+
+  transition:
+  transform 1s ease,
+  filter .6s ease;
+
+  transform:scale(1);
+
+  filter:
+  brightness(.92)
+  contrast(1.03);
+}
+
+.car-card:hover .car-image img{
+
+  transform:
+  scale(1.06);
+
+  filter:
+  brightness(.98)
+  contrast(1.08);
+}
