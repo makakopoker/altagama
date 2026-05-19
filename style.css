@@ -729,3 +729,95 @@ body{
 
   color:#C6A06A;
 }
+/* ==========================
+   PREMIUM CARDS
+========================== */
+
+.car-card{
+
+  transition:
+  transform .35s ease,
+  border-color .35s ease,
+  box-shadow .35s ease;
+
+  will-change:transform;
+}
+
+.car-card:hover{
+
+  transform:
+  translateY(-8px);
+
+  border-color:
+  rgba(198,160,106,.22);
+
+  box-shadow:
+  0 28px 70px rgba(0,0,0,.42);
+}
+
+
+/* FOTO */
+
+.car-image{
+
+  overflow:hidden;
+
+  transition:.5s ease;
+}
+
+.car-card:hover .car-image{
+
+  filter:
+  brightness(.98)
+  contrast(1.08);
+}
+
+
+/* EFECTO SHINE MUY PREMIUM */
+
+.car-card::before{
+
+  content:"";
+
+  position:absolute;
+
+  top:0;
+  left:-120%;
+
+  width:70%;
+  height:100%;
+
+  background:
+  linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,.03),
+    transparent
+  );
+
+  transform:
+  skewX(-18deg);
+
+  transition:
+  .9s ease;
+}
+
+.car-card:hover::before{
+
+  left:140%;
+}
+
+
+/* BOTON PREMIUM */
+
+.card-btn{
+
+  transition:
+  all .3s ease;
+}
+
+.card-btn:hover{
+
+  box-shadow:
+  0 0 24px rgba(198,160,106,.12);
+}
