@@ -424,15 +424,54 @@ body{
 
 .premium-image{
 
+  position:relative;
+
+  overflow:hidden;
+
   background:
+
   linear-gradient(
-    rgba(0,0,0,.45),
-    rgba(0,0,0,.45)
+    rgba(0,0,0,.18),
+    rgba(0,0,0,.18)
   ),
+
   url("images/hero.jpg");
 
   background-size:cover;
   background-position:center;
+
+  transition:
+  transform .7s ease;
+}
+
+
+/* ZOOM PREMIUM */
+
+.premium-container:hover .premium-image{
+
+  transform:
+  scale(1.03);
+}
+
+
+/* GLOW DORADO */
+
+.premium-image::after{
+
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  background:
+  radial-gradient(
+    circle at center,
+    rgba(198,160,106,.05),
+    transparent 65%
+  );
+
+  pointer-events:none;
 }
 
 .premium-content{
