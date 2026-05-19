@@ -640,3 +640,79 @@ body{
     1px solid rgba(255,255,255,.06);
   }
 }
+/* FOOTER */
+
+.footer{
+
+  margin-top:80px;
+
+  border-top:
+  1px solid rgba(255,255,255,.06);
+
+  padding:38px 40px;
+
+  background:#050505;
+}
+
+.footer-container{
+
+  max-width:1600px;
+
+  margin:auto;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.footer-logo{
+
+  display:flex;
+  align-items:center;
+  gap:16px;
+}
+
+.footer-logo img{
+
+  width:52px;
+}
+
+.footer-logo h3{
+
+  color:#fff;
+
+  margin:0;
+
+  font-size:1.2rem;
+
+  letter-spacing:.12em;
+}
+
+.footer-logo span{
+
+  color:#C6A06A;
+
+  font-size:.8rem;
+
+  letter-spacing:.35em;
+}
+
+.footer-links{
+
+  display:flex;
+  gap:34px;
+}
+
+.footer-links a{
+
+  color:#a5a5a5;
+
+  text-decoration:none;
+
+  transition:.2s ease;
+}
+
+.footer-links a:hover{
+
+  color:#C6A06A;
+}
