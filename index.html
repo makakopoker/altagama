@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 
 <meta charset="UTF-8">
+
 <meta
 name="viewport"
 content="width=device-width, initial-scale=1.0"
@@ -22,8 +24,10 @@ crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
 rel="stylesheet">
 
-<link rel="stylesheet"
-href="style.css">
+<link
+rel="stylesheet"
+href="style.css"
+/>
 
 </head>
 
@@ -33,44 +37,48 @@ href="style.css">
 
 <header class="navbar">
 
-  <a
-  href="#"
-  class="brand"
-  >
+  <div class="navbar-inner">
 
-    <div class="logo-ag">
-      AG
-    </div>
+    <a
+    href="#"
+    class="brand"
+    >
 
-    <div class="brand-text">
+      <div class="logo-box">
+        AG
+      </div>
 
-      <h1>
-        ALTA GAMA
-      </h1>
+      <div class="brand-copy">
 
-      <span>
-        AUTOMOTIVE
-      </span>
+        <h1>
+          ALTA GAMA
+        </h1>
 
-    </div>
+        <span>
+          AUTOMOTIVE
+        </span>
 
-  </a>
+      </div>
 
-  <nav class="nav-links">
-
-    <a href="#stock">
-      Stock
     </a>
 
-    <a href="#about">
-      Nosotros
-    </a>
+    <nav class="nav-links">
 
-    <a href="#contact">
-      Contacto
-    </a>
+      <a href="#stock">
+        Stock
+      </a>
 
-  </nav>
+      <a href="#bespoke">
+        Búsqueda
+      </a>
+
+      <a href="#contact">
+        Contacto
+      </a>
+
+    </nav>
+
+  </div>
 
 </header>
 
@@ -80,30 +88,34 @@ href="style.css">
 
   <div class="hero-overlay"></div>
 
-  <div class="hero-content">
+  <div class="hero-inner">
 
-    <div class="hero-tag">
-      VEHÍCULOS PREMIUM
+    <div class="hero-copy">
+
+      <div class="hero-label">
+        PREMIUM AUTOMOTIVE
+      </div>
+
+      <h2>
+        Vehículos exclusivos
+        seleccionados con
+        criterio.
+      </h2>
+
+      <p>
+        Vehículos premium cuidadosamente
+        seleccionados, priorizando estado,
+        historial y configuraciones únicas.
+      </p>
+
+      <a
+      href="#stock"
+      class="hero-btn"
+      >
+        VER STOCK →
+      </a>
+
     </div>
-
-    <h2>
-      Excelencia. Selección.
-      <br>
-      Pasión por los detalles.
-    </h2>
-
-    <p>
-      Vehículos premium seleccionados
-      con criterio.
-      Calidad, transparencia y confianza.
-    </p>
-
-    <a
-    href="#stock"
-    class="hero-btn"
-    >
-      VER STOCK DISPONIBLE →
-    </a>
 
   </div>
 
@@ -112,80 +124,94 @@ href="style.css">
 <!-- STOCK -->
 
 <section
-class="stock-section"
+class="stock"
 id="stock"
 >
 
-  <div class="section-line">
+  <div class="section-header">
 
-    <span></span>
+    <span class="section-line">
+    </span>
 
-    <h3>
-      STOCK ACTUAL
-    </h3>
+    <div class="section-copy">
+
+      <div class="section-tag">
+        VEHÍCULOS
+      </div>
+
+      <h3>
+        Stock actual
+      </h3>
+
+    </div>
 
   </div>
 
-  <div class="cars-grid">
+  <div class="stock-grid">
 
     <!-- INFINITI -->
 
-    <div class="car-card">
+    <article
+    class="vehicle-card"
+    >
 
       <div
-      class="car-image"
+      class="vehicle-image"
       style="
       background-image:
       url('images/front2.jpg');
       "
-      ></div>
+      >
+      </div>
 
-      <div class="car-info">
+      <div class="vehicle-content">
 
-        <div class="car-brand">
+        <div class="vehicle-brand">
           INFINITI
         </div>
 
         <h2>
           QX70S 5.0 V8
-          <br>
           Premium AWD
         </h2>
 
-        <div class="car-price">
-          22.500 €
+        <div class="vehicle-price">
+          20.500 €
         </div>
 
-        <div class="car-meta">
+        <div class="vehicle-meta">
           2015 · 146.000 km
         </div>
 
         <a
         href="cars/infiniti-qx70.html"
-        class="car-btn"
+        class="vehicle-btn"
         >
           VER VEHÍCULO →
         </a>
 
       </div>
 
-    </div>
+    </article>
 
     <!-- BMW -->
 
-    <div class="car-card">
+    <article
+    class="vehicle-card"
+    >
 
       <div
-      class="car-image"
+      class="vehicle-image"
       style="
       background-image:
       url('images/x6-front.jpg');
       "
-      ></div>
+      >
+      </div>
 
-      <div class="car-info">
+      <div class="vehicle-content">
 
-        <div class="car-brand">
+        <div class="vehicle-brand">
           BMW
         </div>
 
@@ -194,68 +220,103 @@ id="stock"
           xDrive
         </h2>
 
-        <div class="car-price">
-          23.000 €
+        <div class="vehicle-price">
+          28.900 €
         </div>
 
-        <div class="car-meta">
+        <div class="vehicle-meta">
           2013 · 207.000 km
         </div>
 
         <a
         href="cars/bmw-x6-m50d.html"
-        class="car-btn"
+        class="vehicle-btn"
         >
           VER VEHÍCULO →
         </a>
 
       </div>
 
-    </div>
+    </article>
 
   </div>
 
 </section>
-
 <!-- BESPOKE -->
 
-<section class="bespoke-section">
+<section
+class="bespoke"
+id="bespoke"
+>
 
-  <div class="bespoke-card">
+  <div class="bespoke-wrapper">
 
-    <div
-    class="bespoke-image"
-    style="
-    background-image:
-    url('images/hero.jpg');
-    "
-    ></div>
+    <!-- LEFT -->
 
-    <div class="bespoke-content">
+    <div class="bespoke-visual">
 
-      <div class="hero-tag">
+      <div class="bespoke-overlay">
+      </div>
+
+    </div>
+
+    <!-- CENTER -->
+
+    <div class="bespoke-main">
+
+      <div class="section-tag">
         BÚSQUEDA PREMIUM
       </div>
 
-      <h2>
+      <h3>
         ¿No encuentras
         la unidad adecuada?
-      </h2>
+      </h3>
 
       <p>
         Encontramos vehículos premium
-        seleccionados bajo criterio,
-        priorizando configuración,
-        historial, equipamiento y estado.
+        cuidadosamente seleccionados,
+        priorizando historial, estado,
+        configuración y equipamiento.
       </p>
 
       <a
       href="https://wa.me/34600000000"
       target="_blank"
-      class="hero-btn"
+      class="vehicle-btn"
       >
         SOLICITAR BÚSQUEDA →
       </a>
+
+    </div>
+
+    <!-- RIGHT -->
+
+    <div class="bespoke-right">
+
+      <div class="brand-pill">
+        BMW M / X Range
+      </div>
+
+      <div class="brand-pill">
+        Porsche
+      </div>
+
+      <div class="brand-pill">
+        Mercedes AMG
+      </div>
+
+      <div class="brand-pill">
+        Audi RS / SQ
+      </div>
+
+      <div class="brand-pill">
+        SUVs Premium
+      </div>
+
+      <div class="brand-pill">
+        Configuraciones exclusivas
+      </div>
 
     </div>
 
@@ -265,66 +326,104 @@ id="stock"
 
 <!-- TRUST -->
 
-<section class="trust-section">
+<section class="trust-bar">
 
-  <div class="trust-box">
+  <div class="trust-item">
 
     <h4>
       Garantía y confianza
     </h4>
 
     <p>
-      Vehículos revisados y garantizados
+      Vehículos revisados
     </p>
 
   </div>
 
-  <div class="trust-box">
+  <div class="trust-item">
 
     <h4>
-      Transparencia total
+      Transparencia
     </h4>
 
     <p>
-      Historial y kilometraje certificado
+      Historial verificado
     </p>
 
   </div>
 
-  <div class="trust-box">
+  <div class="trust-item">
 
     <h4>
-      Atención personalizada
+      Atención premium
     </h4>
 
     <p>
-      Asesoramiento premium a medida
+      Trato personalizado
     </p>
 
   </div>
 
-  <div class="trust-box">
+  <div class="trust-item">
 
     <h4>
       Búsqueda internacional
     </h4>
 
     <p>
-      Acceso a unidades exclusivas
+      Vehículos exclusivos
     </p>
 
   </div>
 
 </section>
 
+<!-- FOOTER -->
+
 <footer
 class="footer"
 id="contact"
 >
 
-  <p>
-    © Alta Gama Automotive
-  </p>
+  <div class="footer-inner">
+
+    <div class="footer-brand">
+
+      <div class="logo-box">
+        AG
+      </div>
+
+      <div class="brand-copy">
+
+        <h4>
+          ALTA GAMA
+        </h4>
+
+        <span>
+          AUTOMOTIVE
+        </span>
+
+      </div>
+
+    </div>
+
+    <div class="footer-links">
+
+      <a href="#">
+        Instagram
+      </a>
+
+      <a href="#">
+        WhatsApp
+      </a>
+
+      <a href="#">
+        Contacto
+      </a>
+
+    </div>
+
+  </div>
 
 </footer>
 
