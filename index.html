@@ -3,7 +3,7 @@
 
 <head>
 
-<meta charset="UTF-8">
+<meta charset="UTF-8" />
 
 <meta
 name="viewport"
@@ -21,7 +21,7 @@ href="https://fonts.googleapis.com">
 href="https://fonts.gstatic.com"
 crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
 rel="stylesheet">
 
 <link
@@ -37,7 +37,7 @@ href="style.css"
 
 <header class="navbar">
 
-  <div class="navbar-inner">
+  <div class="nav-container">
 
     <a
     href="#"
@@ -68,8 +68,8 @@ href="style.css"
         Stock
       </a>
 
-      <a href="#bespoke">
-        Búsqueda
+      <a href="#about">
+        Nosotros
       </a>
 
       <a href="#contact">
@@ -86,33 +86,37 @@ href="style.css"
 
 <section class="hero">
 
-  <div class="hero-overlay"></div>
+  <div class="hero-gradient">
+  </div>
 
   <div class="hero-inner">
 
-    <div class="hero-copy">
+    <div class="hero-content">
 
-      <div class="hero-label">
-        PREMIUM AUTOMOTIVE
-      </div>
+      <span class="hero-kicker">
+        VEHÍCULOS PREMIUM
+      </span>
 
       <h2>
-        Vehículos exclusivos
-        seleccionados con
-        criterio.
+        Excelencia.
+        Selección.
+        <br>
+        Pasión por
+        los detalles.
       </h2>
 
       <p>
-        Vehículos premium cuidadosamente
-        seleccionados, priorizando estado,
-        historial y configuraciones únicas.
+        Vehículos premium
+        seleccionados con criterio.
+        Calidad, transparencia
+        y confianza.
       </p>
 
       <a
       href="#stock"
       class="hero-btn"
       >
-        VER STOCK →
+        VER STOCK DISPONIBLE →
       </a>
 
     </div>
@@ -128,118 +132,104 @@ class="stock"
 id="stock"
 >
 
-  <div class="section-header">
+<div class="stock-header">
 
-    <span class="section-line">
-    </span>
-
-    <div class="section-copy">
-
-      <div class="section-tag">
-        VEHÍCULOS
-      </div>
-
-      <h3>
-        Stock actual
-      </h3>
-
-    </div>
-
+  <div class="gold-line">
   </div>
 
-  <div class="stock-grid">
+  <span>
+    STOCK ACTUAL
+  </span>
 
-    <!-- INFINITI -->
+</div>
 
-    <article
-    class="vehicle-card"
-    >
+<div class="stock-grid">
 
-      <div
-      class="vehicle-image"
-      style="
-      background-image:
-      url('images/front2.jpg');
-      "
-      >
-      </div>
+<!-- CARD 1 -->
 
-      <div class="vehicle-content">
+<article class="car-card">
 
-        <div class="vehicle-brand">
-          INFINITI
-        </div>
+<div
+class="car-image"
+style="
+background-image:
+url('images/front2.jpg');
+"
+></div>
 
-        <h2>
-          QX70S 5.0 V8
-          Premium AWD
-        </h2>
+<div class="car-content">
 
-        <div class="vehicle-price">
-          20.500 €
-        </div>
+<div class="car-brand">
+INFINITI
+</div>
 
-        <div class="vehicle-meta">
-          2015 · 146.000 km
-        </div>
+<h3>
+QX70S 5.0 V8
+Premium AWD
+</h3>
 
-        <a
-        href="cars/infiniti-qx70.html"
-        class="vehicle-btn"
-        >
-          VER VEHÍCULO →
-        </a>
+<div class="car-price">
+22.500 €
+</div>
 
-      </div>
+<div class="car-meta">
+2015 · 146.000 km
+</div>
 
-    </article>
+<a
+href="cars/infiniti-qx70.html"
+class="card-btn"
+>
+VER VEHÍCULO →
+</a>
 
-    <!-- BMW -->
+</div>
 
-    <article
-    class="vehicle-card"
-    >
+</article>
 
-      <div
-      class="vehicle-image"
-      style="
-      background-image:
-      url('images/x6-front.jpg');
-      "
-      >
-      </div>
+<!-- CARD 2 -->
 
-      <div class="vehicle-content">
+<article class="car-card">
 
-        <div class="vehicle-brand">
-          BMW
-        </div>
+<div
+class="car-image"
+style="
+background-image:
+url('images/x6-front.jpg');
+"
+></div>
 
-        <h2>
-          X6 M50d
-          xDrive
-        </h2>
+<div class="car-content">
 
-        <div class="vehicle-price">
-          28.900 €
-        </div>
+<div class="car-brand">
+BMW
+</div>
 
-        <div class="vehicle-meta">
-          2013 · 207.000 km
-        </div>
+<h3>
+X6 M50d
+xDrive
+</h3>
 
-        <a
-        href="cars/bmw-x6-m50d.html"
-        class="vehicle-btn"
-        >
-          VER VEHÍCULO →
-        </a>
+<div class="car-price">
+23.000 €
+</div>
 
-      </div>
+<div class="car-meta">
+2013 · 207.000 km
+</div>
 
-    </article>
+<a
+href="cars/bmw-x6-m50d.html"
+class="card-btn"
+>
+VER VEHÍCULO →
+</a>
 
-  </div>
+</div>
+
+</article>
+
+</div>
 
 </section>
 <!-- BESPOKE -->
