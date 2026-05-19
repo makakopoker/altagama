@@ -148,24 +148,37 @@ body{
   display:flex;
   align-items:center;
 
+  overflow:hidden;
+
   background:
 
   linear-gradient(
     90deg,
-    rgba(0,0,0,.97) 0%,
-    rgba(0,0,0,.90) 18%,
-    rgba(0,0,0,.75) 36%,
-    rgba(0,0,0,.35) 58%,
-    rgba(0,0,0,.06) 76%
+    rgba(0,0,0,.88) 0%,
+    rgba(0,0,0,.72) 30%,
+    rgba(0,0,0,.42) 55%,
+    rgba(0,0,0,.12) 100%
   ),
 
   url("images/hero-premium.jpg");
 
   background-size:cover;
-  background-position:
-  center right;
+  background-position:center right;
+
+  animation:
+  heroZoom 18s ease-in-out infinite alternate;
 }
 
+@keyframes heroZoom{
+
+  from{
+    background-size:100%;
+  }
+
+  to{
+    background-size:104%;
+  }
+}
 .hero-wrapper{
 
   width:100%;
