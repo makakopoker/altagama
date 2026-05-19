@@ -647,8 +647,14 @@ body{
 }
 .brand-icon{
 
+  width:28px;
+  height:28px;
+
   min-width:28px;
-  min-height:28px;
+
+  color:#C6A06A;
 
   opacity:.95;
+
+  flex-shrink:0;
 }
