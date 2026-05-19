@@ -755,3 +755,104 @@ body {
 .right{
   right:40px;
 }
+/* BESPOKE SERVICE */
+
+.bespoke-service {
+  padding: 120px 7%;
+}
+
+.bespoke-content {
+  background:
+  linear-gradient(
+    180deg,
+    rgba(255,255,255,.04),
+    rgba(255,255,255,.02)
+  );
+
+  border: 1px solid
+  rgba(255,255,255,.05);
+
+  border-radius: 40px;
+  padding: 80px;
+  text-align: center;
+}
+
+.bespoke-tag {
+  color: rgba(255,255,255,.45);
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+
+.bespoke-content h2 {
+  font-size: 3.2rem;
+  margin-bottom: 25px;
+}
+
+.bespoke-content p {
+  color: rgba(255,255,255,.72);
+  max-width: 800px;
+  margin: auto;
+  line-height: 2;
+  margin-bottom: 40px;
+}
+
+.specialities {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 45px;
+}
+
+.specialities span {
+  background:
+  rgba(255,255,255,.05);
+
+  padding: 14px 20px;
+  border-radius: 999px;
+}
+
+.bespoke-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  color: black;
+  text-decoration: none;
+  padding: 20px 36px;
+  border-radius: 18px;
+  font-weight: 700;
+}
+
+/* CARD */
+
+.bespoke-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+}
+
+.bespoke-card-content {
+  padding: 50px;
+}
+
+.bespoke-card p {
+  color: rgba(255,255,255,.72);
+  line-height: 1.8;
+  margin: 20px 0 35px;
+}
+
+/* MOBILE */
+
+@media(max-width:1100px){
+
+  .bespoke-content{
+    padding:45px;
+  }
+
+  .bespoke-content h2{
+    font-size:2.2rem;
+  }
+
+}
