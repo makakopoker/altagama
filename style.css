@@ -645,3 +645,10 @@ body{
 
   opacity:.9;
 }
+.brand-icon{
+
+  min-width:28px;
+  min-height:28px;
+
+  opacity:.95;
+}
