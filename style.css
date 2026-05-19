@@ -62,12 +62,17 @@ body{
 
 .brand{
 
-  display:flex;
-  align-items:center;
-  gap:14px;
+  color:#C6A06A;
 
-  text-decoration:none;
-  color:white;
+  font-size:.82rem;
+
+  letter-spacing:.25em;
+
+  text-transform:uppercase;
+
+  margin-bottom:14px;
+
+  display:block;
 }
 
 .brand:visited{
