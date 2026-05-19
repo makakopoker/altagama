@@ -443,6 +443,39 @@ left:40px;
 
 right:40px;
 }
+   /* ==========================
+   ACTIVE THUMBNAIL
+========================== */
+
+.thumbnail-gallery img{
+
+  opacity:.58;
+
+  transition:
+  transform .25s ease,
+  border-color .25s ease,
+  opacity .25s ease,
+  box-shadow .25s ease;
+}
+
+.thumbnail-gallery img:hover{
+
+  opacity:1;
+}
+
+.thumbnail-gallery img.active-thumb{
+
+  opacity:1;
+
+  border-color:#C6A06A;
+
+  box-shadow:
+  0 0 28px
+  rgba(198,160,106,.16);
+
+  transform:
+  translateY(-2px);
+}
 </style>
 
 </head>
