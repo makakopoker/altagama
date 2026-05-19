@@ -195,15 +195,13 @@ body{
 
   position:relative;
 
-  min-height:720px;
-
-  display:flex;
-  align-items:center;
-
   overflow:hidden;
+}
 
-  border-bottom:
-  1px solid rgba(255,255,255,.05);
+.hero-content{
+
+  position:relative;
+  z-index:2;
 }
 
 
