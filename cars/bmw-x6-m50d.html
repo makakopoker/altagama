@@ -1213,19 +1213,58 @@ prevImage();
 
 .featured-item{
 
-  padding:22px;
+  position:relative;
 
-  border-radius:22px;
+  overflow:hidden;
+
+  padding:28px 24px;
+
+  border-radius:24px;
 
   border:
   1px solid rgba(198,160,106,.12);
 
   background:
-  rgba(198,160,106,.03);
+  linear-gradient(
+    180deg,
+    rgba(198,160,106,.04),
+    rgba(255,255,255,.015)
+  );
 
   text-align:center;
 
+  color:#fff;
+
+  transition:
+  transform .28s ease,
+  border-color .28s ease,
+  box-shadow .28s ease;
+}
+
+.featured-item:hover{
+
+  transform:
+  translateY(-6px);
+
+  border-color:
+  rgba(198,160,106,.28);
+
+  box-shadow:
+  0 20px 40px
+  rgba(0,0,0,.28);
+}
+
+.featured-item::before{
+
+  content:"✦";
+
+  display:block;
+
   color:#C6A06A;
+
+  font-size:1.3rem;
+
+  margin-bottom:12px;
 }
 
 /* EQUIPMENT */
