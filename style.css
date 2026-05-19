@@ -54,6 +54,43 @@ body{
   border-color .3s ease;
 }
 
+
+/* LINKS NAVBAR */
+
+.navbar a{
+
+  position:relative;
+
+  transition:
+  color .3s ease;
+}
+
+.navbar a::after{
+
+  content:"";
+
+  position:absolute;
+
+  left:0;
+  bottom:-8px;
+
+  width:0;
+  height:1px;
+
+  background:#C6A06A;
+
+  transition:.35s ease;
+}
+
+.navbar a:hover{
+
+  color:#C6A06A;
+}
+
+.navbar a:hover::after{
+
+  width:100%;
+}
 .nav-wrapper{
 
   max-width:1450px;
