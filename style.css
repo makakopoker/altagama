@@ -29,21 +29,29 @@ body{
 .navbar{
 
   position:fixed;
+
   top:0;
   left:0;
+
   width:100%;
 
   z-index:9999;
 
   background:
-  rgba(0,0,0,.45);
+  rgba(7,7,7,.72);
 
   backdrop-filter:
-  blur(14px);
+  blur(18px);
+
+  -webkit-backdrop-filter:
+  blur(18px);
 
   border-bottom:
-  1px solid
-  rgba(255,255,255,.04);
+  1px solid rgba(255,255,255,.05);
+
+  transition:
+  background .3s ease,
+  border-color .3s ease;
 }
 
 .nav-wrapper{
