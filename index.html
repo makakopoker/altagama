@@ -3,7 +3,7 @@
 
 <head>
 
-<meta charset="UTF-8" />
+<meta charset="UTF-8">
 
 <meta
 name="viewport"
@@ -37,7 +37,7 @@ href="style.css"
 
 <header class="navbar">
 
-  <div class="nav-container">
+  <div class="nav-wrapper">
 
     <a
     href="#"
@@ -48,7 +48,7 @@ href="style.css"
         AG
       </div>
 
-      <div class="brand-copy">
+      <div class="brand-text">
 
         <h1>
           ALTA GAMA
@@ -68,8 +68,8 @@ href="style.css"
         Stock
       </a>
 
-      <a href="#about">
-        Nosotros
+      <a href="#premium">
+        Búsqueda
       </a>
 
       <a href="#contact">
@@ -86,14 +86,14 @@ href="style.css"
 
 <section class="hero">
 
-  <div class="hero-gradient">
+  <div class="hero-overlay">
   </div>
 
-  <div class="hero-inner">
+  <div class="hero-wrapper">
 
     <div class="hero-content">
 
-      <span class="hero-kicker">
+      <span class="hero-tag">
         VEHÍCULOS PREMIUM
       </span>
 
@@ -106,17 +106,16 @@ href="style.css"
       </h2>
 
       <p>
-        Vehículos premium
-        seleccionados con criterio.
-        Calidad, transparencia
-        y confianza.
+        Vehículos premium seleccionados
+        bajo criterio, priorizando estado,
+        historial y configuraciones únicas.
       </p>
 
       <a
       href="#stock"
       class="hero-btn"
       >
-        VER STOCK DISPONIBLE →
+        VER STOCK →
       </a>
 
     </div>
@@ -132,20 +131,20 @@ class="stock"
 id="stock"
 >
 
-<div class="stock-header">
+<div class="section-header">
 
-  <div class="gold-line">
-  </div>
+<div class="gold-line">
+</div>
 
-  <span>
-    STOCK ACTUAL
-  </span>
+<span>
+STOCK ACTUAL
+</span>
 
 </div>
 
-<div class="stock-grid">
+<div class="cars-grid">
 
-<!-- CARD 1 -->
+<!-- INFINITI -->
 
 <article class="car-card">
 
@@ -157,7 +156,7 @@ url('images/front2.jpg');
 "
 ></div>
 
-<div class="car-content">
+<div class="car-info">
 
 <div class="car-brand">
 INFINITI
@@ -169,7 +168,7 @@ Premium AWD
 </h3>
 
 <div class="car-price">
-22.500 €
+20.500 €
 </div>
 
 <div class="car-meta">
@@ -187,7 +186,7 @@ VER VEHÍCULO →
 
 </article>
 
-<!-- CARD 2 -->
+<!-- BMW -->
 
 <article class="car-card">
 
@@ -199,7 +198,7 @@ url('images/x6-front.jpg');
 "
 ></div>
 
-<div class="car-content">
+<div class="car-info">
 
 <div class="car-brand">
 BMW
@@ -232,96 +231,90 @@ VER VEHÍCULO →
 </div>
 
 </section>
-<!-- BESPOKE -->
+<!-- PREMIUM SEARCH -->
 
 <section
-class="bespoke"
-id="bespoke"
+class="premium-search"
+id="premium"
 >
 
-  <div class="bespoke-wrapper">
+  <div class="premium-container">
 
     <!-- LEFT -->
 
-    <div class="bespoke-visual">
-
-      <div class="bespoke-overlay">
-      </div>
-
+    <div class="premium-image">
     </div>
 
     <!-- CENTER -->
 
-    <section class="premium-search" id="about">
+    <div class="premium-content">
 
-<div class="premium-wrapper">
+      <span class="hero-tag">
+        BÚSQUEDA PREMIUM
+      </span>
 
-<div class="premium-visual"></div>
+      <h3>
+        ¿No encuentras
+        la unidad adecuada?
+      </h3>
 
-<div class="premium-main">
+      <p>
+        Encontramos vehículos premium
+        cuidadosamente seleccionados,
+        priorizando historial, estado,
+        equipamiento y configuraciones
+        específicas.
+      </p>
 
-<span class="premium-tag">
-BÚSQUEDA PREMIUM
-</span>
+      <a
+      href="https://wa.me/34600000000"
+      target="_blank"
+      class="hero-btn"
+      >
+        SOLICITAR BÚSQUEDA →
+      </a>
 
-<h3>
-¿No encuentras la unidad adecuada?
-</h3>
+    </div>
 
-<p>
-Encontramos vehículos premium
-seleccionados bajo criterio,
-priorizando historial,
-estado y equipamiento.
-</p>
+    <!-- RIGHT -->
 
-<a
-href="https://wa.me/34600000000"
-class="hero-btn"
-target="_blank"
->
-SOLICITAR BÚSQUEDA →
-</a>
+    <div class="premium-right">
 
-</div>
+      <div class="pill">
+        BMW M / X Range
+      </div>
 
-<div class="premium-right">
+      <div class="pill">
+        Porsche
+      </div>
 
-<div class="premium-pill">
-BMW M / X Range
-</div>
+      <div class="pill">
+        Mercedes AMG
+      </div>
 
-<div class="premium-pill">
-Porsche
-</div>
+      <div class="pill">
+        Audi RS / SQ
+      </div>
 
-<div class="premium-pill">
-Mercedes AMG
-</div>
+      <div class="pill">
+        SUV Premium
+      </div>
 
-<div class="premium-pill">
-Audi RS / SQ
-</div>
+      <div class="pill">
+        Configuraciones exclusivas
+      </div>
 
-<div class="premium-pill">
-SUV Premium
-</div>
+    </div>
 
-<div class="premium-pill">
-Configuraciones exclusivas
-</div>
-
-</div>
-
-</div>
+  </div>
 
 </section>
 
 <!-- TRUST -->
 
-<section class="trust-bar">
+<section class="trust-section">
 
-  <div class="trust-item">
+  <div class="trust-card">
 
     <h4>
       Garantía y confianza
@@ -329,42 +322,46 @@ Configuraciones exclusivas
 
     <p>
       Vehículos revisados
+      y seleccionados.
     </p>
 
   </div>
 
-  <div class="trust-item">
+  <div class="trust-card">
 
     <h4>
-      Transparencia
+      Transparencia total
     </h4>
 
     <p>
-      Historial verificado
+      Historial y kilometraje
+      verificados.
     </p>
 
   </div>
 
-  <div class="trust-item">
+  <div class="trust-card">
 
     <h4>
-      Atención premium
+      Atención personalizada
     </h4>
 
     <p>
-      Trato personalizado
+      Asesoramiento premium
+      a medida.
     </p>
 
   </div>
 
-  <div class="trust-item">
+  <div class="trust-card">
 
     <h4>
       Búsqueda internacional
     </h4>
 
     <p>
-      Vehículos exclusivos
+      Acceso a unidades
+      exclusivas.
     </p>
 
   </div>
@@ -378,43 +375,7 @@ class="footer"
 id="contact"
 >
 
-  <div class="footer-inner">
-
-    <div class="footer-brand">
-
-      <div class="logo-box">
-        AG
-      <!-- TRUST -->
-
-<section class="trust-strip">
-
-  <div class="trust-card">
-    <h4>Garantía y confianza</h4>
-    <p>Vehículos revisados y garantizados</p>
-  </div>
-
-  <div class="trust-card">
-    <h4>Transparencia total</h4>
-    <p>Historial y kilómetros certificados</p>
-  </div>
-
-  <div class="trust-card">
-    <h4>Atención personalizada</h4>
-    <p>Asesoramiento a medida</p>
-  </div>
-
-  <div class="trust-card">
-    <h4>Búsqueda internacional</h4>
-    <p>Acceso a unidades exclusivas</p>
-  </div>
-
-</section>
-
-<!-- FOOTER -->
-
-<footer class="footer" id="contact">
-
-  <div class="footer-container">
+  <div class="footer-wrapper">
 
     <div class="footer-brand">
 
@@ -422,22 +383,41 @@ id="contact"
         AG
       </div>
 
-      <div class="brand-copy">
-        <h4>ALTA GAMA</h4>
-        <span>AUTOMOTIVE</span>
+      <div class="brand-text">
+
+        <h4>
+          ALTA GAMA
+        </h4>
+
+        <span>
+          AUTOMOTIVE
+        </span>
+
       </div>
 
     </div>
 
     <div class="footer-links">
-      <a href="#">Instagram</a>
-      <a href="#">WhatsApp</a>
-      <a href="#">Contacto</a>
+
+      <a href="#">
+        Instagram
+      </a>
+
+      <a href="#">
+        WhatsApp
+      </a>
+
+      <a href="#">
+        Contacto
+      </a>
+
     </div>
 
   </div>
 
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
