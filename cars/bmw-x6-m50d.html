@@ -155,20 +155,59 @@ href="../style.css"
   margin-bottom:32px;
 }
 
+.vehicle-meta{
+
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:14px;
+
+  margin-top:28px;
+}
+
 .vehicle-meta span{
 
-  border:
-  1px solid rgba(255,255,255,.06);
+  display:flex;
 
-  padding:
-  10px 18px;
+  align-items:center;
+
+  justify-content:center;
+
+  min-width:110px;
+
+  padding:14px 22px;
 
   border-radius:999px;
 
-  background:
-  rgba(255,255,255,.02);
+  border:
+  1px solid rgba(255,255,255,.08);
 
-  color:#d4d4d4;
+  background:
+  rgba(255,255,255,.025);
+
+  color:#e5e5e5;
+
+  font-size:.95rem;
+
+  font-weight:500;
+
+  transition:
+  transform .25s ease,
+  border-color .25s ease,
+  background .25s ease;
+}
+
+.vehicle-meta span:hover{
+
+  transform:
+  translateY(-2px);
+
+  border-color:
+  rgba(198,160,106,.22);
+
+  background:
+  rgba(198,160,106,.04);
 }
 
 .vehicle-buttons{
