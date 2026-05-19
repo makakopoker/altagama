@@ -81,7 +81,15 @@ body{
   align-items:center;
   gap:14px;
 
-  text-decoration:none;
+  text-decoration:none !important;
+
+  color:white !important;
+}
+.brand:visited,
+.brand:hover,
+.brand:active{
+
+  color:white !important;
 }
 
 .logo-box{
@@ -111,6 +119,8 @@ body{
 }
 
 .brand-copy h1{
+
+  color:#f4f4f4;
 
   font-size:1.9rem;
 
