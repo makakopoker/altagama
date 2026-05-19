@@ -583,3 +583,65 @@ body{
     display:none;
   }
 }
+/* PREMIUM ICON PILLS */
+
+.brand-pill{
+
+  display:flex;
+  align-items:center;
+  gap:14px;
+
+  padding:
+  14px 18px;
+
+  border:
+  1px solid
+  rgba(255,255,255,.08);
+
+  border-radius:
+  999px;
+
+  transition:.25s ease;
+
+  cursor:pointer;
+
+  min-width:240px;
+}
+
+.brand-pill:hover{
+
+  border-color:
+  rgba(198,160,106,.4);
+
+  transform:
+  translateY(-2px);
+
+  background:
+  rgba(255,255,255,.02);
+}
+
+.brand-pill img{
+
+  width:26px;
+  height:26px;
+
+  object-fit:contain;
+
+  opacity:.92;
+}
+
+.brand-pill span{
+
+  color:#f1f1f1;
+
+  font-size:1rem;
+}
+
+.icon-outline{
+
+  color:var(--gold);
+
+  font-size:1.3rem;
+
+  opacity:.9;
+}
