@@ -197,9 +197,18 @@ body{
 
 .hero{
 
-  padding-top:88px;
-}
+  position:relative;
 
+  min-height:100vh;
+
+  display:flex;
+
+  align-items:center;
+
+  overflow:hidden;
+
+  background:#050505;
+}
 .hero-content{
 
   position:relative;
@@ -242,13 +251,15 @@ body{
   background:
   linear-gradient(
     90deg,
-    rgba(0,0,0,.88) 0%,
-    rgba(0,0,0,.70) 35%,
-    rgba(0,0,0,.35) 55%,
-    rgba(0,0,0,.12) 100%
+    rgba(0,0,0,.72) 0%,
+    rgba(0,0,0,.50) 35%,
+    rgba(0,0,0,.18) 60%,
+    rgba(0,0,0,.05) 100%
   );
 
   z-index:1;
+
+  pointer-events:none;
 }
 
 
@@ -282,13 +293,12 @@ body{
 .hero-content{
 
   position:relative;
+
   z-index:2;
 
   max-width:650px;
 
-  padding-left:95px;
-
-  padding-top:90px;
+  padding-left:90px;
 }
 
 
