@@ -991,3 +991,29 @@ body{
   border-color:
   rgba(255,141,141,.22);
 }
+/* ==========================
+   SOLD VEHICLE EFFECT
+========================== */
+
+.sold-car{
+
+  opacity:.72;
+
+  filter:
+  grayscale(.18);
+}
+
+.sold-car img{
+
+  transition:
+  transform .4s ease,
+  filter .4s ease;
+}
+
+.sold-car:hover{
+
+  opacity:.9;
+
+  filter:
+  grayscale(.08);
+}
