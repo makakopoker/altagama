@@ -1,0 +1,1525 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0"
+/>
+
+<title>
+Mini Cooper S |
+Alta Gama Automotive
+</title>
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+rel="stylesheet">
+
+<link
+rel="stylesheet"
+href="../style.css"
+/>
+
+<style>
+
+/* ==========================
+   PAGE
+========================== */
+
+.vehicle-page{
+
+  padding-top:110px;
+
+  background:#050505;
+
+  color:#fff;
+}
+
+/* HERO */
+
+.vehicle-hero{
+
+  max-width:1450px;
+
+  margin:auto;
+
+  padding:
+  0 5% 80px;
+
+  display:grid;
+
+  grid-template-columns:
+  44% 56%;
+
+  gap:60px;
+
+  align-items:center;
+}
+
+.vehicle-brand{
+
+  color:#C6A06A;
+
+  text-transform:uppercase;
+
+  letter-spacing:5px;
+
+  font-size:.95rem;
+
+  font-weight:600;
+
+  margin-bottom:12px;
+}
+
+.vehicle-title{
+
+  font-family:
+  'Cormorant Garamond',
+  serif;
+
+  font-size:5.4rem;
+
+  font-weight:600;
+
+  line-height:.92;
+
+  letter-spacing:-2px;
+
+  color:#fff;
+
+  margin:
+  18px 0 26px;
+
+  text-wrap:balance;
+}
+
+.vehicle-badges{
+
+  display:flex;
+  flex-wrap:wrap;
+
+  gap:10px;
+
+  margin-bottom:28px;
+}
+
+.vehicle-badge{
+
+  border:
+  1px solid rgba(198,160,106,.18);
+
+  color:#C6A06A;
+
+  background:
+  rgba(198,160,106,.04);
+
+  padding:
+  8px 14px;
+
+  border-radius:999px;
+
+  font-size:.72rem;
+
+  letter-spacing:.12em;
+
+  text-transform:uppercase;
+}
+
+.vehicle-price{
+
+  font-size:4.4rem;
+
+  font-weight:700;
+
+  color:#C6A06A;
+
+  letter-spacing:-2px;
+
+  line-height:1;
+
+  margin:
+  26px 0 34px;
+
+  text-shadow:
+  0 0 30px
+  rgba(198,160,106,.08);
+}
+
+.vehicle-meta{
+
+  display:flex;
+  flex-wrap:wrap;
+
+  gap:18px;
+
+  margin-bottom:32px;
+}
+
+.vehicle-meta{
+
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:14px;
+
+  margin-top:28px;
+}
+
+.vehicle-meta span{
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  min-width:110px;
+
+  padding:14px 22px;
+
+  border-radius:999px;
+
+  border:
+  1px solid rgba(255,255,255,.08);
+
+  background:
+  rgba(255,255,255,.025);
+
+  color:#e5e5e5;
+
+  font-size:.95rem;
+
+  font-weight:500;
+
+  transition:
+  transform .25s ease,
+  border-color .25s ease,
+  background .25s ease;
+}
+
+.vehicle-meta span:hover{
+
+  transform:
+  translateY(-2px);
+
+  border-color:
+  rgba(198,160,106,.22);
+
+  background:
+  rgba(198,160,106,.04);
+}
+
+.vehicle-buttons{
+
+  display:flex;
+  gap:16px;
+}
+
+.vehicle-btn{
+
+  display:inline-flex;
+
+  align-items:center;
+  justify-content:center;
+
+  text-decoration:none;
+
+  height:58px;
+
+  padding:0 28px;
+
+  border:
+  1px solid #C6A06A;
+
+  color:#C6A06A;
+
+  transition:.3s ease;
+}
+
+.vehicle-btn:hover{
+
+  background:
+  rgba(198,160,106,.08);
+
+  box-shadow:
+  0 0 28px rgba(198,160,106,.12);
+}
+
+.vehicle-btn.primary{
+
+  background:#C6A06A;
+
+  color:#000;
+}
+
+/* IMAGE */
+
+/* HERO IMAGE */
+
+.hero-car-image{
+
+  position:relative;
+
+  width:100%;
+
+  height:700px;
+
+  border-radius:32px;
+
+  overflow:hidden;
+
+  border:
+  1px solid rgba(255,255,255,.06);
+
+  background:#080808;
+
+  box-shadow:
+  0 30px 80px
+  rgba(0,0,0,.28);
+}
+
+.hero-car-image::after{
+
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  background:
+  linear-gradient(
+    180deg,
+    transparent 45%,
+    rgba(0,0,0,.16)
+  );
+
+  pointer-events:none;
+}
+
+.hero-car-image img{
+
+  width:100%;
+
+  height:100%;
+
+  object-fit:cover;
+
+  object-position:center;
+
+  display:block;
+
+  transition:
+  transform 1.2s ease,
+  filter .6s ease;
+
+  filter:
+  brightness(.97)
+  contrast(1.04);
+}
+
+.hero-car-image:hover img{
+
+  transform:
+  scale(1.035);
+
+  filter:
+  brightness(1)
+  contrast(1.08);
+}
+.hero-car-image img{
+
+  width:100%;
+
+  height:100%;
+
+  object-fit:cover;
+
+  object-position:center;
+
+  display:block;
+
+  transition:
+  transform 1.2s ease,
+  filter .6s ease;
+
+  filter:
+  brightness(.96)
+  contrast(1.03);
+}
+
+.hero-car-image:hover img{
+
+  transform:
+  scale(1.04);
+
+  filter:
+  brightness(1)
+  contrast(1.06);
+}
+
+/* GALLERY */
+
+.gallery-section{
+
+  max-width:1450px;
+
+  margin:auto;
+
+  padding:0 5% 60px;
+}
+
+.main-gallery{
+
+  overflow:hidden;
+
+  border-radius:28px;
+
+  border:
+  1px solid rgba(255,255,255,.06);
+
+  margin-bottom:18px;
+}
+
+.main-gallery{
+
+  height:720px;
+
+  overflow:hidden;
+
+  border-radius:28px;
+
+  border:1px solid rgba(255,255,255,.06);
+
+  margin-bottom:18px;
+}
+
+.main-gallery img{
+
+  width:100%;
+
+  height:100%;
+
+  object-fit:cover;
+
+  object-position:center;
+
+  display:block;
+
+  cursor:pointer;
+
+  transition:
+  transform .8s ease,
+  filter .5s ease;
+}
+
+.main-gallery:hover img{
+
+  transform:
+  scale(1.02);
+
+  filter:
+  brightness(1.02);
+}
+
+.thumbnail-gallery{
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(8,1fr);
+
+  gap:12px;
+}
+
+.thumbnail-gallery img{
+
+  width:100%;
+
+  aspect-ratio:1/1;
+
+  object-fit:cover;
+
+  border-radius:16px;
+
+  border:
+  1px solid rgba(255,255,255,.05);
+
+  cursor:pointer;
+
+  transition:.25s ease;
+}
+
+.thumbnail-gallery img:hover{
+
+  border-color:
+  rgba(198,160,106,.4);
+
+  transform:
+  translateY(-2px);
+}
+   /* ==========================
+   LIGHTBOX PREMIUM
+========================== */
+
+.lightbox{
+
+position:fixed;
+
+inset:0;
+
+background:
+rgba(0,0,0,.95);
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+z-index:99999;
+
+opacity:0;
+
+pointer-events:none;
+
+transition:.3s ease;
+}
+
+.lightbox.active{
+
+opacity:1;
+
+pointer-events:auto;
+}
+
+.lightbox img{
+
+max-width:90vw;
+
+max-height:88vh;
+
+border-radius:22px;
+
+box-shadow:
+0 30px 80px
+rgba(0,0,0,.5);
+}
+
+.lightbox-close{
+
+position:absolute;
+
+top:30px;
+
+right:40px;
+
+background:none;
+
+border:none;
+
+color:#C6A06A;
+
+font-size:2rem;
+
+cursor:pointer;
+}
+
+.lightbox-nav{
+
+position:absolute;
+
+top:50%;
+
+transform:
+translateY(-50%);
+
+background:
+rgba(255,255,255,.04);
+
+border:
+1px solid rgba(198,160,106,.15);
+
+color:#C6A06A;
+
+width:64px;
+
+height:64px;
+
+border-radius:50%;
+
+cursor:pointer;
+
+font-size:2rem;
+
+transition:.25s ease;
+}
+
+.lightbox-nav:hover{
+
+background:
+rgba(198,160,106,.08);
+}
+
+.lightbox-nav.prev{
+
+left:40px;
+}
+
+.lightbox-nav.next{
+
+right:40px;
+}
+   /* ==========================
+   ACTIVE THUMBNAIL
+========================== */
+
+.thumbnail-gallery img{
+
+  opacity:.58;
+
+  transition:
+  transform .25s ease,
+  border-color .25s ease,
+  opacity .25s ease,
+  box-shadow .25s ease;
+}
+
+.thumbnail-gallery img:hover{
+
+  opacity:1;
+}
+
+.thumbnail-gallery img.active-thumb{
+
+  opacity:1;
+
+  border-color:#C6A06A;
+
+  box-shadow:
+  0 0 28px
+  rgba(198,160,106,.16);
+
+  transform:
+  translateY(-2px);
+}
+</style>
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+<div class="nav-wrapper">
+
+<a
+href="../index.html"
+class="brand"
+>
+
+<div class="logo-box">
+AG
+</div>
+
+<div class="brand-text">
+
+<h1>
+ALTA GAMA
+</h1>
+
+<span>
+AUTOMOTIVE
+</span>
+
+</div>
+
+</a>
+
+<nav class="nav-links">
+
+<a href="../index.html#stock">
+Stock
+</a>
+
+<a href="../index.html#premium">
+Búsqueda
+</a>
+
+<a href="../index.html#contact">
+Contacto
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+<section class="vehicle-page">
+
+<section class="vehicle-hero">
+
+<div>
+
+<div class="vehicle-brand">
+Mini
+</div>
+
+<h1 class="vehicle-title">
+Cooper S
+</h1>
+
+<div class="vehicle-badges">
+
+<div class="vehicle-badge">
+1.6 Turbo
+</div>
+
+<div class="vehicle-badge">
+Muy Equipado
+</div>
+
+<div class="vehicle-badge">
+Bose Premium Audio
+</div>
+
+<div class="vehicle-badge">
+LIBRO MANTENIMIENTO
+</div>
+
+</div>
+
+<div class="vehicle-price">
+22.500 €
+</div>
+
+<div class="vehicle-meta">
+
+<span>
+2015
+</span>
+
+<span>
+146.000 km
+</span>
+
+<span>
+390 CV
+</span>
+
+<span>
+AWD
+</span>
+
+<span>
+Gasolina
+</span>
+
+</div>
+
+<div class="vehicle-buttons">
+
+<a
+href="https://wa.me/34640115481"
+target="_blank"
+class="vehicle-btn primary"
+>
+SOLICITAR VÍDEO
+</a>
+
+<a
+href="https://wa.me/34640115481"
+target="_blank"
+class="vehicle-btn"
+>
+CONTACTAR
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-car-image">
+
+<img
+src="../images/front2.jpg"
+alt="Infiniti QX70S"
+>
+
+</div>
+
+</section>
+
+<section class="gallery-section">
+
+<div class="main-gallery">
+
+<img
+id="mainImage"
+src="../images/front2.jpg"
+>
+
+</div>
+
+<div class="thumbnail-gallery">
+
+<img
+src="../images/front.jpg"
+onclick="selectImage(this)"
+class="active-thumb"
+>
+
+<img src="../images/front2.jpg"
+onclick="selectImage(this)">
+   
+<img src="../images/rear.jpg"
+onclick="selectImage(this)">
+
+<img src="../images/side.jpg"
+onclick="selectImage(this)">
+
+<img src="../images/interior.jpg"
+onclick="selectImage(this)">
+
+<img src="../images/seats.jpg"
+onclick="selectImage(this)">
+
+<img src="../images/bose.jpg"
+onclick="selectImage(this)">
+
+
+</div>
+
+</section>
+
+<!-- DATOS TECNICOS -->
+
+<section class="gallery-section">
+
+<div class="section-header">
+
+<div class="gold-line">
+</div>
+
+<span>
+DATOS TÉCNICOS
+</span>
+
+</div>
+
+<div class="spec-grid">
+
+<div class="spec-card">
+<span>Motor</span>
+<strong>5.0 V8 Atmosférico</strong>
+</div>
+
+<div class="spec-card">
+<span>Potencia</span>
+<strong>390 CV</strong>
+</div>
+
+<div class="spec-card">
+<span>Tracción</span>
+<strong>AWD</strong>
+</div>
+
+<div class="spec-card">
+<span>Cambio</span>
+<strong>Automático</strong>
+</div>
+
+<div class="spec-card">
+<span>Combustible</span>
+<strong>Gasolina</strong>
+</div>
+
+<div class="spec-card">
+<span>Kilómetros</span>
+<strong>146.000 km</strong>
+</div>
+
+</div>
+
+</section>
+
+<!-- ESTADO UNIDAD -->
+
+<section class="gallery-section">
+
+<div class="section-header">
+
+<div class="gold-line">
+</div>
+
+<span>
+ESTADO DE LA UNIDAD
+</span>
+
+</div>
+
+<div class="status-grid">
+
+<div class="status-card">
+✅ Libro de mantenimiento
+</div>
+
+<div class="status-card">
+✅ ITV al día
+</div>
+
+<div class="status-card">
+✅ Mantenimiento realizado
+</div>
+
+<div class="status-card">
+✅ Vehículo muy cuidado
+</div>
+
+<div class="status-card">
+✅ Historial verificable
+</div>
+
+<div class="status-card">
+✅ Posibilidad revisión mecánica
+</div>
+
+</div>
+
+</section>
+
+<!-- EQUIPAMIENTO DESTACADO -->
+
+<section class="gallery-section">
+
+<div class="section-header">
+
+<div class="gold-line">
+</div>
+
+<span>
+EQUIPAMIENTO DESTACADO
+</span>
+
+</div>
+
+<div class="featured-grid">
+
+<div class="featured-item">
+Bose Premium Audio
+</div>
+
+<div class="featured-item">
+Cámara 360º
+</div>
+
+<div class="featured-item">
+Techo solar
+</div>
+
+<div class="featured-item">
+AWD Inteligente
+</div>
+
+<div class="featured-item">
+Asientos eléctricos memoria
+</div>
+
+<div class="featured-item">
+Asientos calefactables y ventilados
+</div>
+
+
+<div class="featured-item">
+Faros Bi-Xenon adaptativos
+</div>
+
+<div class="featured-item">
+Keyless Entry & Start
+</div>
+
+</div>
+
+</section>
+
+<!-- EQUIPAMIENTO COMPLETO -->
+
+<section class="gallery-section">
+
+<div class="section-header">
+
+<div class="gold-line">
+</div>
+
+<span>
+EQUIPAMIENTO COMPLETO
+</span>
+
+</div>
+
+<div class="equipment-grid">
+
+<div class="equipment-box">
+
+<h3>
+Confort & Interior
+</h3>
+
+<ul>
+
+<li>Asientos eléctricos con memoria</li>
+<li>Asientos calefactables y ventiladoss</li>
+<li>Tapicería cuero acolchado premium</li>
+<li>Climatizador bizona</li>
+<li>Techo solar eléctrico</li>
+<li>Keyless Entry & Start</li>
+<li>Portón eléctrico</li>
+<li>Cristales tintados</li>
+<li>Volante multifunción</li>
+
+</ul>
+
+</div>
+
+<div class="equipment-box">
+
+<h3>
+Tecnología & Multimedia
+</h3>
+
+<ul>
+
+<li>Bose Premium Audio</li>
+<li>Navegación GPS</li>
+<li>Bluetooth</li>
+<li>Cámara 360º</li>
+<li>Sensores parking</li>
+<li>USB multimedia</li>
+<li>Pantalla multimedia</li>
+
+</ul>
+
+</div>
+
+<div class="equipment-box">
+
+<h3>
+Seguridad
+</h3>
+
+<ul>
+
+<li>ABS / ESP</li>
+<li>Control crucero</li>
+<li>Faros Bi-Xenon adaptativos</li>
+<li>Sensor lluvia</li>
+<li>Luces automáticas</li>
+<li>ISOFIX</li>
+<li>Airbags múltiples</li>
+
+</ul>
+
+</div>
+
+<div class="equipment-box">
+
+<h3>
+Prestaciones & Sport
+</h3>
+
+<ul>
+
+<li>Motor V8 5.0 Atmosférico</li>
+<li>Cambio secuencial</li>
+<li>Levas al volante</li>
+<li>Modo Sport</li>
+<li>Suspensión deportiva S Adaptativa</li>
+<li>Llantas deportivas 21 pulgadas</li>
+<li>AWD inteligente</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+<!-- CTA FINAL -->
+
+<section class="gallery-section">
+
+<div class="final-cta">
+
+<div>
+
+<div class="vehicle-brand">
+ALTA GAMA AUTOMOTIVE
+</div>
+
+<h2>
+¿Quieres vídeo completo,
+más fotos o escuchar
+el sonido del V8 atmosférico?
+</h2>
+
+<p>
+Solicita información sin compromiso.
+Podemos enviarte vídeo completo,
+arranque en frío, sonido del motor
+y detalles específicos del vehículo.
+</p>
+
+</div>
+
+<a
+href="https://wa.me/34640115481"
+target="_blank"
+class="vehicle-btn primary"
+>
+SOLICITAR INFORMACIÓN
+</a>
+
+</div>
+
+</section>
+
+</section>
+
+<script>
+
+const images = [
+
+"../images/x6-front.jpg",
+"../images/x6-front2.jpg",
+"../images/x6-side.jpg",
+"../images/x6-rear.jpg",
+"../images/x6-lights.jpg",
+"../images/x6-interior.jpg",
+"../images/x6-seats.jpg"
+
+];
+
+let currentIndex = 0;
+
+function selectImage(element){
+
+document.getElementById(
+"mainImage"
+).src = element.src;
+
+/* QUITAR ACTIVA A TODAS */
+
+document
+.querySelectorAll(
+".thumbnail-gallery img"
+)
+.forEach(img=>{
+
+img.classList.remove(
+"active-thumb"
+);
+
+});
+
+/* ACTIVAR LA NUEVA */
+
+element.classList.add(
+"active-thumb"
+);
+
+/* ACTUALIZAR INDEX */
+
+currentIndex =
+images.indexOf(
+element.src.split(
+window.location.origin
+)[1]
+);
+
+}
+
+document.getElementById(
+"mainImage"
+).addEventListener(
+"click",
+openLightbox
+);
+
+function openLightbox(){
+
+document.getElementById(
+"lightbox"
+).classList.add("active");
+
+document.getElementById(
+"lightboxImage"
+).src =
+images[currentIndex];
+}
+
+function closeLightbox(){
+
+document.getElementById(
+"lightbox"
+).classList.remove("active");
+}
+
+function nextImage(){
+
+currentIndex++;
+
+if(
+currentIndex >= images.length
+){
+currentIndex = 0;
+}
+
+document.getElementById(
+"lightboxImage"
+).src =
+images[currentIndex];
+}
+
+function prevImage(){
+
+currentIndex--;
+
+if(currentIndex < 0){
+
+currentIndex =
+images.length - 1;
+}
+
+document.getElementById(
+"lightboxImage"
+).src =
+images[currentIndex];
+}
+
+document.addEventListener(
+"keydown",
+(e)=>{
+
+if(e.key==="Escape"){
+closeLightbox();
+}
+
+if(e.key==="ArrowRight"){
+nextImage();
+}
+
+if(e.key==="ArrowLeft"){
+prevImage();
+}
+
+});
+
+</script>
+<style>
+
+/* ==========================
+   SPECS
+========================== */
+
+.spec-grid{
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(3,1fr);
+
+  gap:18px;
+}
+
+.spec-card{
+
+  border:
+  1px solid rgba(255,255,255,.06);
+
+  border-radius:24px;
+
+  padding:28px;
+
+  background:
+  rgba(255,255,255,.02);
+}
+
+.spec-card span{
+
+  color:#989898;
+
+  display:block;
+
+  margin-bottom:10px;
+}
+
+.spec-card strong{
+
+  color:#fff;
+
+  font-size:1.1rem;
+}
+
+/* STATUS */
+
+.status-grid{
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(3,1fr);
+
+  gap:18px;
+}
+
+.status-card{
+
+  padding:22px;
+
+  border-radius:22px;
+
+  border:
+  1px solid rgba(255,255,255,.06);
+
+  background:
+  rgba(255,255,255,.02);
+}
+
+/* FEATURED */
+
+.featured-grid{
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(4,1fr);
+
+  gap:18px;
+}
+
+.featured-item{
+
+  position:relative;
+
+  overflow:hidden;
+
+  padding:28px 24px;
+
+  border-radius:24px;
+
+  border:
+  1px solid rgba(198,160,106,.12);
+
+  background:
+  linear-gradient(
+    180deg,
+    rgba(198,160,106,.04),
+    rgba(255,255,255,.015)
+  );
+
+  text-align:center;
+
+  color:#fff;
+
+  transition:
+  transform .28s ease,
+  border-color .28s ease,
+  box-shadow .28s ease;
+}
+
+.featured-item:hover{
+
+  transform:
+  translateY(-6px);
+
+  border-color:
+  rgba(198,160,106,.28);
+
+  box-shadow:
+  0 20px 40px
+  rgba(0,0,0,.28);
+}
+
+.featured-item::before{
+
+  content:"✦";
+
+  display:block;
+
+  color:#C6A06A;
+
+  font-size:1.3rem;
+
+  margin-bottom:12px;
+}
+
+/* EQUIPMENT */
+
+.equipment-grid{
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(2,1fr);
+
+  gap:22px;
+}
+
+.equipment-box{
+
+  padding:32px;
+
+  border-radius:28px;
+
+  border:
+  1px solid rgba(255,255,255,.06);
+
+  background:
+  rgba(255,255,255,.02);
+}
+
+.equipment-box h3{
+
+  color:#C6A06A;
+
+  margin-bottom:18px;
+}
+
+.equipment-box ul{
+
+  list-style:none;
+}
+
+.equipment-box li{
+
+  padding:10px 0;
+
+  border-bottom:
+  1px solid rgba(255,255,255,.04);
+
+  color:#d1d1d1;
+}
+
+/* CTA */
+
+.final-cta{
+
+  border:
+  1px solid rgba(198,160,106,.12);
+
+  border-radius:32px;
+
+  padding:50px;
+
+  background:
+  linear-gradient(
+    180deg,
+    rgba(198,160,106,.03),
+    rgba(255,255,255,.01)
+  );
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  gap:30px;
+}
+
+.final-cta h2{
+
+  font-family:
+  'Cormorant Garamond',
+  serif;
+
+  font-size:3rem;
+
+  line-height:.95;
+
+  margin-bottom:16px;
+}
+
+.final-cta p{
+
+  color:#a7a7a7;
+
+  max-width:600px;
+
+  line-height:1.8;
+}
+
+/* MOBILE */
+
+@media(max-width:1100px){
+
+.vehicle-hero,
+.spec-grid,
+.status-grid,
+.featured-grid,
+.equipment-grid{
+
+grid-template-columns:1fr;
+}
+
+.thumbnail-gallery{
+
+grid-template-columns:
+repeat(4,1fr);
+}
+
+.final-cta{
+
+flex-direction:column;
+align-items:flex-start;
+}
+
+.vehicle-title{
+
+font-size:3rem;
+}
+}
+
+</style>
+<div class="lightbox" id="lightbox">
+
+<button
+class="lightbox-close"
+onclick="closeLightbox()"
+>
+✕
+</button>
+
+<img
+id="lightboxImage"
+src=""
+alt=""
+>
+
+<button
+class="lightbox-nav prev"
+onclick="prevImage()"
+>
+‹
+</button>
+
+<button
+class="lightbox-nav next"
+onclick="nextImage()"
+>
+›
+</button>
+
+</div>
+</body>
+</html>
