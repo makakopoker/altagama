@@ -10,7 +10,7 @@ content="width=device-width, initial-scale=1.0"
 />
 
 <title>
-Infiniti QX70S 5.0 V8 Premium AWD |
+X6 M50d xDrive |
 Alta Gama Automotive
 </title>
 
@@ -52,14 +52,15 @@ href="../style.css"
 
   margin:auto;
 
-  padding:0 5% 60px;
+  padding:
+  0 5% 80px;
 
   display:grid;
 
   grid-template-columns:
-  46% 54%;
+  44% 56%;
 
-  gap:42px;
+  gap:60px;
 
   align-items:center;
 }
@@ -68,13 +69,15 @@ href="../style.css"
 
   color:#C6A06A;
 
-  letter-spacing:.32em;
-
   text-transform:uppercase;
 
-  font-size:.82rem;
+  letter-spacing:5px;
 
-  margin-bottom:18px;
+  font-size:.95rem;
+
+  font-weight:600;
+
+  margin-bottom:12px;
 }
 
 .vehicle-title{
@@ -83,13 +86,20 @@ href="../style.css"
   'Cormorant Garamond',
   serif;
 
-  font-size:4.4rem;
+  font-size:5.4rem;
+
+  font-weight:600;
 
   line-height:.92;
 
-  font-weight:500;
+  letter-spacing:-2px;
 
-  margin-bottom:24px;
+  color:#fff;
+
+  margin:
+  18px 0 26px;
+
+  text-wrap:balance;
 }
 
 .vehicle-badges{
@@ -126,13 +136,22 @@ href="../style.css"
 
 .vehicle-price{
 
+  font-size:4.4rem;
+
+  font-weight:700;
+
   color:#C6A06A;
 
-  font-size:3.2rem;
+  letter-spacing:-2px;
 
-  font-weight:600;
+  line-height:1;
 
-  margin-bottom:18px;
+  margin:
+  26px 0 34px;
+
+  text-shadow:
+  0 0 30px
+  rgba(198,160,106,.08);
 }
 
 .vehicle-meta{
@@ -145,20 +164,59 @@ href="../style.css"
   margin-bottom:32px;
 }
 
+.vehicle-meta{
+
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:14px;
+
+  margin-top:28px;
+}
+
 .vehicle-meta span{
 
-  border:
-  1px solid rgba(255,255,255,.06);
+  display:flex;
 
-  padding:
-  10px 18px;
+  align-items:center;
+
+  justify-content:center;
+
+  min-width:110px;
+
+  padding:14px 22px;
 
   border-radius:999px;
 
-  background:
-  rgba(255,255,255,.02);
+  border:
+  1px solid rgba(255,255,255,.08);
 
-  color:#d4d4d4;
+  background:
+  rgba(255,255,255,.025);
+
+  color:#e5e5e5;
+
+  font-size:.95rem;
+
+  font-weight:500;
+
+  transition:
+  transform .25s ease,
+  border-color .25s ease,
+  background .25s ease;
+}
+
+.vehicle-meta span:hover{
+
+  transform:
+  translateY(-2px);
+
+  border-color:
+  rgba(198,160,106,.22);
+
+  background:
+  rgba(198,160,106,.04);
 }
 
 .vehicle-buttons{
@@ -206,29 +264,46 @@ href="../style.css"
 
 /* IMAGE */
 
+/* HERO IMAGE */
+
 .hero-car-image{
+
+  position:relative;
 
   width:100%;
 
-  border-radius:28px;
+  height:700px;
+
+  border-radius:32px;
 
   overflow:hidden;
 
   border:
   1px solid rgba(255,255,255,.06);
+
+  background:#080808;
+
+  box-shadow:
+  0 30px 80px
+  rgba(0,0,0,.28);
 }
 
-.hero-car-image{
+.hero-car-image::after{
 
-  width:100%;
+  content:"";
 
-  height:650px;
+  position:absolute;
 
-  border-radius:28px;
+  inset:0;
 
-  overflow:hidden;
+  background:
+  linear-gradient(
+    180deg,
+    transparent 45%,
+    rgba(0,0,0,.16)
+  );
 
-  border:1px solid rgba(255,255,255,.06);
+  pointer-events:none;
 }
 
 .hero-car-image img{
@@ -242,6 +317,54 @@ href="../style.css"
   object-position:center;
 
   display:block;
+
+  transition:
+  transform 1.2s ease,
+  filter .6s ease;
+
+  filter:
+  brightness(.97)
+  contrast(1.04);
+}
+
+.hero-car-image:hover img{
+
+  transform:
+  scale(1.035);
+
+  filter:
+  brightness(1)
+  contrast(1.08);
+}
+.hero-car-image img{
+
+  width:100%;
+
+  height:100%;
+
+  object-fit:cover;
+
+  object-position:center;
+
+  display:block;
+
+  transition:
+  transform 1.2s ease,
+  filter .6s ease;
+
+  filter:
+  brightness(.96)
+  contrast(1.03);
+}
+
+.hero-car-image:hover img{
+
+  transform:
+  scale(1.04);
+
+  filter:
+  brightness(1)
+  contrast(1.06);
 }
 
 /* GALLERY */
@@ -293,6 +416,19 @@ href="../style.css"
   display:block;
 
   cursor:pointer;
+
+  transition:
+  transform .8s ease,
+  filter .5s ease;
+}
+
+.main-gallery:hover img{
+
+  transform:
+  scale(1.02);
+
+  filter:
+  brightness(1.02);
 }
 
 .thumbnail-gallery{
@@ -327,6 +463,151 @@ href="../style.css"
 
   border-color:
   rgba(198,160,106,.4);
+
+  transform:
+  translateY(-2px);
+}
+   /* ==========================
+   LIGHTBOX PREMIUM
+========================== */
+
+.lightbox{
+
+position:fixed;
+
+inset:0;
+
+background:
+rgba(0,0,0,.95);
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+z-index:99999;
+
+opacity:0;
+
+pointer-events:none;
+
+transition:.3s ease;
+}
+
+.lightbox.active{
+
+opacity:1;
+
+pointer-events:auto;
+}
+
+.lightbox img{
+
+max-width:90vw;
+
+max-height:88vh;
+
+border-radius:22px;
+
+box-shadow:
+0 30px 80px
+rgba(0,0,0,.5);
+}
+
+.lightbox-close{
+
+position:absolute;
+
+top:30px;
+
+right:40px;
+
+background:none;
+
+border:none;
+
+color:#C6A06A;
+
+font-size:2rem;
+
+cursor:pointer;
+}
+
+.lightbox-nav{
+
+position:absolute;
+
+top:50%;
+
+transform:
+translateY(-50%);
+
+background:
+rgba(255,255,255,.04);
+
+border:
+1px solid rgba(198,160,106,.15);
+
+color:#C6A06A;
+
+width:64px;
+
+height:64px;
+
+border-radius:50%;
+
+cursor:pointer;
+
+font-size:2rem;
+
+transition:.25s ease;
+}
+
+.lightbox-nav:hover{
+
+background:
+rgba(198,160,106,.08);
+}
+
+.lightbox-nav.prev{
+
+left:40px;
+}
+
+.lightbox-nav.next{
+
+right:40px;
+}
+   /* ==========================
+   ACTIVE THUMBNAIL
+========================== */
+
+.thumbnail-gallery img{
+
+  opacity:.58;
+
+  transition:
+  transform .25s ease,
+  border-color .25s ease,
+  opacity .25s ease,
+  box-shadow .25s ease;
+}
+
+.thumbnail-gallery img:hover{
+
+  opacity:1;
+}
+
+.thumbnail-gallery img.active-thumb{
+
+  opacity:1;
+
+  border-color:#C6A06A;
+
+  box-shadow:
+  0 0 28px
+  rgba(198,160,106,.16);
 
   transform:
   translateY(-2px);
@@ -391,26 +672,25 @@ Contacto
 <div>
 
 <div class="vehicle-brand">
-INFINITI
+Infiniti
 </div>
 
 <h1 class="vehicle-title">
-QX70S 5.0 V8
-Premium AWD
+QX70S Premium
 </h1>
 
 <div class="vehicle-badges">
 
 <div class="vehicle-badge">
-V8 ATMOSFÉRICO
+5.0 V8
 </div>
 
 <div class="vehicle-badge">
-FULL EXTRAS
+Muy Equipado
 </div>
 
 <div class="vehicle-badge">
-BOSE PREMIUM
+Bose Premium Audio
 </div>
 
 <div class="vehicle-badge">
@@ -472,8 +752,8 @@ CONTACTAR
 <div class="hero-car-image">
 
 <img
-src="../images/front2.jpg"
-alt="Infiniti QX70S"
+src="../images/front.jpg"
+alt="BMW X6 M50d"
 >
 
 </div>
@@ -486,35 +766,37 @@ alt="Infiniti QX70S"
 
 <img
 id="mainImage"
-src="../images/front2.jpg"
+src="../images/front.jpg"
 >
 
 </div>
 
 <div class="thumbnail-gallery">
 
-<img src="../images/front.jpg"
-onclick="changeImage(this)">
+<img
+src="../images/front.jpg"
+onclick="selectImage(this)"
+class="active-thumb"
+>
 
 <img src="../images/front2.jpg"
-onclick="changeImage(this)">
+onclick="selectImage(this)">
+   
+<img src="../images/rear.jpg"
+onclick="selectImage(this)">
 
 <img src="../images/side.jpg"
-onclick="changeImage(this)">
+onclick="selectImage(this)">
 
-<img src="../images/rear.jpg"
-onclick="changeImage(this)">
 <img src="../images/interior.jpg"
-onclick="changeImage(this)">
+onclick="selectImage(this)">
 
 <img src="../images/seats.jpg"
-onclick="changeImage(this)">
-
-<img src="../images/rear-seats.jpg"
-onclick="changeImage(this)">
+onclick="selectImage(this)">
 
 <img src="../images/bose.jpg"
-onclick="changeImage(this)">
+onclick="selectImage(this)">
+
 
 </div>
 
@@ -549,7 +831,7 @@ DATOS TÉCNICOS
 
 <div class="spec-card">
 <span>Tracción</span>
-<strong>AWD Inteligente</strong>
+<strong>AWD</strong>
 </div>
 
 <div class="spec-card">
@@ -634,7 +916,7 @@ EQUIPAMIENTO DESTACADO
 <div class="featured-grid">
 
 <div class="featured-item">
-BOSE Premium Audio
+Bose Premium Audio
 </div>
 
 <div class="featured-item">
@@ -657,8 +939,9 @@ Asientos eléctricos memoria
 Asientos calefactables y ventilados
 </div>
 
+
 <div class="featured-item">
-Faros Bi-Xenón adaptativos
+Faros Bi-Xenon adaptativos
 </div>
 
 <div class="featured-item">
@@ -695,7 +978,7 @@ Confort & Interior
 <ul>
 
 <li>Asientos eléctricos con memoria</li>
-<li>Asientos calefactables y ventilados</li>
+<li>Asientos calefactables y ventiladoss</li>
 <li>Tapicería cuero acolchado premium</li>
 <li>Climatizador bizona</li>
 <li>Techo solar eléctrico</li>
@@ -716,13 +999,13 @@ Tecnología & Multimedia
 
 <ul>
 
-<li>BOSE Premium Audio</li>
+<li>Bose Premium Audio</li>
 <li>Navegación GPS</li>
 <li>Bluetooth</li>
 <li>Cámara 360º</li>
 <li>Sensores parking</li>
 <li>USB multimedia</li>
-<li>Pantalla multimedia Infiniti</li>
+<li>Pantalla multimedia</li>
 
 </ul>
 
@@ -738,12 +1021,11 @@ Seguridad
 
 <li>ABS / ESP</li>
 <li>Control crucero</li>
-<li>Faros Bi-Xenón adaptativos</li>
+<li>Faros Bi-Xenon adaptativos</li>
 <li>Sensor lluvia</li>
 <li>Luces automáticas</li>
 <li>ISOFIX</li>
 <li>Airbags múltiples</li>
-<li>Freno anticolisión</li>
 
 </ul>
 
@@ -757,12 +1039,12 @@ Prestaciones & Sport
 
 <ul>
 
-<li>Motor V8 5.0 390CV</li>
+<li>Motor V8 5.0 Atmosférico</li>
 <li>Cambio secuencial</li>
 <li>Levas al volante</li>
 <li>Modo Sport</li>
-<li>Suspensión deportiva S</li>
-<li>Llantas deportivas</li>
+<li>Suspensión deportiva S Adaptativa</li>
+<li>Llantas deportivas 21 pulgadas</li>
 <li>AWD inteligente</li>
 
 </ul>
@@ -787,7 +1069,7 @@ ALTA GAMA AUTOMOTIVE
 <h2>
 ¿Quieres vídeo completo,
 más fotos o escuchar
-el sonido del V8?
+el sonido del V8 atmosférico?
 </h2>
 
 <p>
@@ -815,16 +1097,134 @@ SOLICITAR INFORMACIÓN
 
 <script>
 
-function changeImage(element){
+const images = [
+
+"../images/x6-front.jpg",
+"../images/x6-front2.jpg",
+"../images/x6-side.jpg",
+"../images/x6-rear.jpg",
+"../images/x6-lights.jpg",
+"../images/x6-interior.jpg",
+"../images/x6-seats.jpg"
+
+];
+
+let currentIndex = 0;
+
+function selectImage(element){
 
 document.getElementById(
 "mainImage"
 ).src = element.src;
 
+/* QUITAR ACTIVA A TODAS */
+
+document
+.querySelectorAll(
+".thumbnail-gallery img"
+)
+.forEach(img=>{
+
+img.classList.remove(
+"active-thumb"
+);
+
+});
+
+/* ACTIVAR LA NUEVA */
+
+element.classList.add(
+"active-thumb"
+);
+
+/* ACTUALIZAR INDEX */
+
+currentIndex =
+images.indexOf(
+element.src.split(
+window.location.origin
+)[1]
+);
+
 }
 
-</script>
+document.getElementById(
+"mainImage"
+).addEventListener(
+"click",
+openLightbox
+);
 
+function openLightbox(){
+
+document.getElementById(
+"lightbox"
+).classList.add("active");
+
+document.getElementById(
+"lightboxImage"
+).src =
+images[currentIndex];
+}
+
+function closeLightbox(){
+
+document.getElementById(
+"lightbox"
+).classList.remove("active");
+}
+
+function nextImage(){
+
+currentIndex++;
+
+if(
+currentIndex >= images.length
+){
+currentIndex = 0;
+}
+
+document.getElementById(
+"lightboxImage"
+).src =
+images[currentIndex];
+}
+
+function prevImage(){
+
+currentIndex--;
+
+if(currentIndex < 0){
+
+currentIndex =
+images.length - 1;
+}
+
+document.getElementById(
+"lightboxImage"
+).src =
+images[currentIndex];
+}
+
+document.addEventListener(
+"keydown",
+(e)=>{
+
+if(e.key==="Escape"){
+closeLightbox();
+}
+
+if(e.key==="ArrowRight"){
+nextImage();
+}
+
+if(e.key==="ArrowLeft"){
+prevImage();
+}
+
+});
+
+</script>
 <style>
 
 /* ==========================
@@ -909,19 +1309,58 @@ document.getElementById(
 
 .featured-item{
 
-  padding:22px;
+  position:relative;
 
-  border-radius:22px;
+  overflow:hidden;
+
+  padding:28px 24px;
+
+  border-radius:24px;
 
   border:
   1px solid rgba(198,160,106,.12);
 
   background:
-  rgba(198,160,106,.03);
+  linear-gradient(
+    180deg,
+    rgba(198,160,106,.04),
+    rgba(255,255,255,.015)
+  );
 
   text-align:center;
 
+  color:#fff;
+
+  transition:
+  transform .28s ease,
+  border-color .28s ease,
+  box-shadow .28s ease;
+}
+
+.featured-item:hover{
+
+  transform:
+  translateY(-6px);
+
+  border-color:
+  rgba(198,160,106,.28);
+
+  box-shadow:
+  0 20px 40px
+  rgba(0,0,0,.28);
+}
+
+.featured-item::before{
+
+  content:"✦";
+
+  display:block;
+
   color:#C6A06A;
+
+  font-size:1.3rem;
+
+  margin-bottom:12px;
 }
 
 /* EQUIPMENT */
@@ -1052,6 +1491,35 @@ font-size:3rem;
 }
 
 </style>
+<div class="lightbox" id="lightbox">
 
+<button
+class="lightbox-close"
+onclick="closeLightbox()"
+>
+✕
+</button>
+
+<img
+id="lightboxImage"
+src=""
+alt=""
+>
+
+<button
+class="lightbox-nav prev"
+onclick="prevImage()"
+>
+‹
+</button>
+
+<button
+class="lightbox-nav next"
+onclick="nextImage()"
+>
+›
+</button>
+
+</div>
 </body>
 </html>
