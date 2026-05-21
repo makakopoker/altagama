@@ -997,23 +997,37 @@ body{
 
 .sold-car{
 
-  opacity:.72;
-
-  filter:
-  grayscale(.18);
+  position:relative;
 }
 
-.sold-car img{
-
-  transition:
-  transform .4s ease,
-  filter .4s ease;
-}
-
-.sold-car:hover{
-
-  opacity:.9;
+.sold-car .car-image{
 
   filter:
-  grayscale(.08);
+  grayscale(.75)
+  brightness(.68)
+  contrast(.95);
+}
+
+.sold-car::after{
+
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  background:
+  rgba(0,0,0,.18);
+
+  pointer-events:none;
+
+  border-radius:20px;
+}
+
+.sold-car:hover .car-image{
+
+  filter:
+  grayscale(.55)
+  brightness(.78)
+  contrast(.98);
 }
