@@ -1035,6 +1035,7 @@ body{
     box-sizing:border-box;
     max-width:100%;
   }
+  
 
   /* ========= NAVBAR ========= */
 
@@ -1160,31 +1161,47 @@ body{
     height:320px !important;
   }
 
-  /* ========= SEARCH PREMIUM ========= */
+ /* =================================
+   IMPORTACIÓN A LA CARTA - MOBILE
+================================= */
 
-  .search-grid{
+.search-grid {
     display:flex !important;
     flex-direction:column !important;
-    gap:30px !important;
+    width:100% !important;
+    gap:24px !important;
     padding:0 20px !important;
-  }
+    overflow:hidden !important;
+}
 
-  .search-content h2{
-    font-size:3.2rem !important;
+.search-content {
+    width:100% !important;
+    max-width:100% !important;
+}
+
+.search-content h2{
+    font-size:2.8rem !important;
     line-height:0.95 !important;
-  }
+    max-width:100% !important;
+}
 
-  .brand-list{
+.search-content p{
+    font-size:1.1rem !important;
+    line-height:1.5 !important;
+}
+
+.brand-list{
     display:flex !important;
-    overflow-x:auto !important;
+    flex-direction:column !important;
     gap:14px !important;
-    padding-bottom:10px !important;
-  }
+    width:100% !important;
+    overflow:visible !important;
+}
 
-  .brand-item{
-    min-width:180px !important;
-  }
-
+.brand-item{
+    width:100% !important;
+    min-width:unset !important;
+    max-width:100% !important;
 }
 /* ==========================================
    MOBILE FIX DEFINITIVO - ALTA GAMA
