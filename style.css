@@ -1031,144 +1031,158 @@ body{
   brightness(.78)
   contrast(.98);
 }
-/* =========================
-   RESPONSIVE MOBILE
-========================= */
+/* ====================================
+   MOBILE RESPONSIVE FIX REAL
+==================================== */
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
-  /* NAVBAR */
-
-  .navbar {
-    padding: 16px 20px;
+  html,
+  body {
+    overflow-x: hidden;
+    width: 100%;
   }
+
+  /* NAV */
 
   .nav-container {
-    flex-direction: column;
-    gap: 18px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-  }
-
-  .nav-links {
+    padding: 22px 20px;
     gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
   }
 
   .logo img {
-    height: 55px;
+    width: 180px;
+    height: auto;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: flex-end;
+    font-size: 16px;
   }
 
   /* HERO */
 
   .hero {
     min-height: auto;
-    padding: 140px 20px 60px;
-    text-align: center;
-  }
-
-  .hero-content {
-    max-width: 100%;
+    padding: 40px 20px 60px;
   }
 
   .hero h1 {
-    font-size: 54px;
+    font-size: 62px !important;
     line-height: 0.95;
+    letter-spacing: -2px;
   }
 
   .hero p {
     font-size: 18px;
+    max-width: 100%;
   }
 
-  /* STOCK GRID */
+  .section-subtitle {
+    font-size: 14px;
+    letter-spacing: 4px;
+  }
+
+  /* STOCK */
 
   .inventory-grid {
-    grid-template-columns: 1fr;
-    gap: 22px;
+    display: grid;
+    grid-template-columns: 1fr !important;
+    gap: 24px;
     padding: 0 20px;
   }
 
-  /* TARJETAS */
+  /* CARD */
 
   .car-card {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     overflow: hidden;
   }
 
   .car-image {
-    height: 260px;
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
   }
 
   .car-info {
-    padding: 28px;
+    width: 100%;
+    padding: 26px;
+  }
+
+  .car-brand {
+    font-size: 14px;
   }
 
   .car-info h3 {
-    font-size: 42px;
+    font-size: 44px !important;
     line-height: 1;
   }
 
   .car-price {
-    font-size: 48px;
+    font-size: 52px !important;
   }
 
-  /* FICHAS COCHE */
-
-  .vehicle-hero {
-    grid-template-columns: 1fr;
-    gap: 40px;
-    padding: 130px 20px 60px;
+  .car-meta {
+    font-size: 16px;
   }
 
-  .hero-car-image {
-    order: -1;
+  .btn-outline {
+    width: 100%;
+    text-align: center;
+    padding: 18px;
   }
 
-  .hero-car-image img {
-    height: auto;
-    max-height: 420px;
-    object-fit: cover;
+  /* BÚSQUEDA PREMIUM */
+
+  .search-section {
+    overflow: hidden;
   }
 
-  .vehicle-title {
-    font-size: 54px;
+  .search-grid {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .search-content {
+    width: 100%;
+  }
+
+  .search-content h2 {
+    font-size: 58px !important;
     line-height: 0.95;
   }
 
-  .vehicle-price {
-    font-size: 52px;
+  .search-content p {
+    font-size: 18px;
   }
 
-  .vehicle-meta {
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  .vehicle-actions {
-    flex-direction: column;
-  }
-
-  .vehicle-actions a {
+  .brand-list {
     width: 100%;
-    text-align: center;
+    overflow-x: auto;
+    display: flex;
+    gap: 16px;
+    padding-bottom: 10px;
   }
 
-  /* GALERÍA */
-
-  .gallery-grid {
-    grid-template-columns: 1fr;
+  .brand-item {
+    min-width: 180px;
   }
 
-  /* EXTRAS */
+  /* FOOTER */
 
-  .specs-grid {
-    grid-template-columns: 1fr;
-  }
-
-  /* CONTACTO */
-
-  .contact-grid {
-    grid-template-columns: 1fr;
+  footer {
+    padding: 50px 20px;
   }
 
 }
