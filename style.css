@@ -1031,158 +1031,141 @@ body{
   brightness(.78)
   contrast(.98);
 }
-/* ====================================
-   MOBILE RESPONSIVE FIX REAL
-==================================== */
+/* ===================================
+   MOBILE FIX DEFINITIVO
+=================================== */
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
+
+  *{
+    max-width:100%;
+    box-sizing:border-box;
+  }
 
   html,
-  body {
-    overflow-x: hidden;
-    width: 100%;
+  body{
+    overflow-x:hidden !important;
   }
 
   /* NAV */
 
-  .nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 22px 20px;
-    gap: 20px;
+  .navbar{
+    padding:20px 18px !important;
   }
 
-  .logo img {
-    width: 180px;
-    height: auto;
+  .nav-container{
+    display:flex !important;
+    justify-content:space-between !important;
+    align-items:flex-start !important;
+    gap:20px !important;
   }
 
-  .nav-links {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-    align-items: flex-end;
-    font-size: 16px;
+  .logo img{
+    width:170px !important;
+    height:auto !important;
+  }
+
+  .nav-links{
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:flex-end !important;
+    gap:14px !important;
+  }
+
+  .nav-links a{
+    font-size:16px !important;
   }
 
   /* HERO */
 
-  .hero {
-    min-height: auto;
-    padding: 40px 20px 60px;
+  .hero{
+    min-height:auto !important;
+    padding:30px 20px 40px !important;
   }
 
-  .hero h1 {
-    font-size: 62px !important;
-    line-height: 0.95;
-    letter-spacing: -2px;
+  .hero-content{
+    width:100% !important;
   }
 
-  .hero p {
-    font-size: 18px;
-    max-width: 100%;
+  .hero h1{
+    font-size:58px !important;
+    line-height:0.95 !important;
+    letter-spacing:-1px !important;
+    margin-bottom:20px !important;
   }
 
-  .section-subtitle {
-    font-size: 14px;
-    letter-spacing: 4px;
+  .hero p{
+    font-size:18px !important;
+    line-height:1.5 !important;
   }
 
   /* STOCK */
 
-  .inventory-grid {
-    display: grid;
-    grid-template-columns: 1fr !important;
-    gap: 24px;
-    padding: 0 20px;
+  .inventory-grid{
+    display:grid !important;
+    grid-template-columns:1fr !important;
+    gap:26px !important;
+    padding:0 18px !important;
   }
 
-  /* CARD */
-
-  .car-card {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    overflow: hidden;
+  .car-card{
+    width:100% !important;
+    display:flex !important;
+    flex-direction:column !important;
   }
 
-  .car-image {
-    width: 100%;
-    height: 250px;
-    background-size: cover;
-    background-position: center;
+  .car-image{
+    width:100% !important;
+    height:260px !important;
+    background-size:cover !important;
+    background-position:center !important;
   }
 
-  .car-info {
-    width: 100%;
-    padding: 26px;
+  .car-info{
+    width:100% !important;
+    padding:24px !important;
   }
 
-  .car-brand {
-    font-size: 14px;
+  .car-info h3{
+    font-size:52px !important;
+    line-height:1 !important;
   }
 
-  .car-info h3 {
-    font-size: 44px !important;
-    line-height: 1;
+  .car-price{
+    font-size:52px !important;
   }
 
-  .car-price {
-    font-size: 52px !important;
-  }
-
-  .car-meta {
-    font-size: 16px;
-  }
-
-  .btn-outline {
-    width: 100%;
-    text-align: center;
-    padding: 18px;
+  .btn-outline{
+    width:100% !important;
+    text-align:center !important;
   }
 
   /* BÚSQUEDA PREMIUM */
 
-  .search-section {
-    overflow: hidden;
+  .search-grid{
+    display:flex !important;
+    flex-direction:column !important;
+    gap:30px !important;
+    padding:0 20px !important;
   }
 
-  .search-grid {
-    display: flex;
-    flex-direction: column;
-    padding: 0 20px;
+  .search-content{
+    width:100% !important;
   }
 
-  .search-content {
-    width: 100%;
+  .search-content h2{
+    font-size:52px !important;
+    line-height:1 !important;
   }
 
-  .search-content h2 {
-    font-size: 58px !important;
-    line-height: 0.95;
+  .brand-list{
+    overflow-x:auto !important;
+    display:flex !important;
+    gap:14px !important;
+    padding-bottom:10px !important;
   }
 
-  .search-content p {
-    font-size: 18px;
+  .brand-item{
+    min-width:180px !important;
   }
-
-  .brand-list {
-    width: 100%;
-    overflow-x: auto;
-    display: flex;
-    gap: 16px;
-    padding-bottom: 10px;
-  }
-
-  .brand-item {
-    min-width: 180px;
-  }
-
-  /* FOOTER */
-
-  footer {
-    padding: 50px 20px;
-  }
-
 }
