@@ -165,20 +165,8 @@ body{
   background-size:cover;
   background-position:center right;
 
-  animation:
-  heroZoom 18s ease-in-out infinite alternate;
 }
 
-@keyframes heroZoom{
-
-  from{
-    background-size:100%;
-  }
-
-  to{
-    background-size:104%;
-  }
-}
 .hero-wrapper{
 
   width:100%;
