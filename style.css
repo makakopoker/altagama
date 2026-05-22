@@ -1139,14 +1139,16 @@ body{
   .vehicle-hero{
     grid-template-columns:1fr !important;
     gap:25px !important;
-    padding:20px !important;
-  }
+    padding:120px 20px 20px !important;
+}
 
   .vehicle-title{
-    font-size:3.4rem !important;
-    line-height:0.95 !important;
+    font-size:4rem !important;
+    line-height:1.15 !important;
     letter-spacing:-1px !important;
-  }
+    padding-top:16px !important;
+    overflow:visible !important;
+}
 
   .vehicle-price{
     font-size:3rem !important;
