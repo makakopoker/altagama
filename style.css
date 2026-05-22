@@ -1031,3 +1031,144 @@ body{
   brightness(.78)
   contrast(.98);
 }
+/* =========================
+   RESPONSIVE MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+
+  .navbar {
+    padding: 16px 20px;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+  }
+
+  .nav-links {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .logo img {
+    height: 55px;
+  }
+
+  /* HERO */
+
+  .hero {
+    min-height: auto;
+    padding: 140px 20px 60px;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 54px;
+    line-height: 0.95;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  /* STOCK GRID */
+
+  .inventory-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    padding: 0 20px;
+  }
+
+  /* TARJETAS */
+
+  .car-card {
+    grid-template-columns: 1fr;
+    overflow: hidden;
+  }
+
+  .car-image {
+    height: 260px;
+  }
+
+  .car-info {
+    padding: 28px;
+  }
+
+  .car-info h3 {
+    font-size: 42px;
+    line-height: 1;
+  }
+
+  .car-price {
+    font-size: 48px;
+  }
+
+  /* FICHAS COCHE */
+
+  .vehicle-hero {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 130px 20px 60px;
+  }
+
+  .hero-car-image {
+    order: -1;
+  }
+
+  .hero-car-image img {
+    height: auto;
+    max-height: 420px;
+    object-fit: cover;
+  }
+
+  .vehicle-title {
+    font-size: 54px;
+    line-height: 0.95;
+  }
+
+  .vehicle-price {
+    font-size: 52px;
+  }
+
+  .vehicle-meta {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .vehicle-actions {
+    flex-direction: column;
+  }
+
+  .vehicle-actions a {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* GALERÍA */
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* EXTRAS */
+
+  .specs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* CONTACTO */
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
