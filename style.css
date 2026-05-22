@@ -1300,28 +1300,21 @@ body{
     font-size: 3rem !important;
   }
 
-  /* IMPORTACIÓN PREMIUM */
-  .premium-search,
-  .search-section,
-  .import-section {
+ /* IMPORTACIÓN PREMIUM */
+.premium-search,
+.search-section,
+.import-section {
     display: flex !important;
     flex-direction: column !important;
     grid-template-columns: 1fr !important;
-  }
+}
 
-  .brands-grid {
+.brands-grid {
     display: grid !important;
     grid-template-columns: 1fr !important;
     gap: 14px !important;
-  }
+}
 
-  .brand-item {
+.brand-item {
     width: 100% !important;
-  }
-
-  /* CUALQUIER GRID ROTO */
-  section,
-  div {
-    max-width: 100vw;
-  }
 }
